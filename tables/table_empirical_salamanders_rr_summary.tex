@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Salamanders recursive-residual calibration across count models.}
+\label{tab:empirical-salamanders-rr-summary}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\toprule
+Model & Family & ZI & RR $p_{\mathrm{combo}}$ & RR $p_{\min}$ & Best RR & RR reject & Refit fails \\
+\midrule
+Poisson RI & poisson & no & 0.000999 & 0.000999 & Tmax\_r & yes & 0 \\
+NB2 RI & nbinom2 & no & 0.416583 & 0.067932 & Tlag & no & 0 \\
+ZINB RI & nbinom2 & yes & 0.047952 & 0.005994 & Tmax\_C & yes & 0 \\
+\bottomrule
+\end{tabular}}%
+\TableNote{All recursive-residual calibrations used $B=1000$ refit replicates and $N_{\mathrm{quad}}=50$. The formal decision is based on the calibrated combined $p$-value; the raw minimum component $p$-value is retained only as a screening measure.}
+\end{table}

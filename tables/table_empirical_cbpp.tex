@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{CBPP clustered-binomial empirical diagnostic summary.}
+\label{tab:empirical-cbpp}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & RR $p_{\mathrm{combo}}$ & RR $p_{\min}$ & Best RR & RR reject & \texttt{DHARMa} unif. & \texttt{DHARMa} disp. & AIC \\
+\midrule
+Binomial RI, period + herd & 0.085914 & 0.013986 & Tdisp & no & 0.105 & 0.498 & 194.1 \\
+Binomial RI + OLRE & --$^{\dag}$ & -- & -- & -- & -- & -- & 186.6 \\
+\bottomrule
+\end{tabular}}%
+\TableNote{$^{\dag}$The RR diagnostic was applied to the simpler binomial random-intercept model only; the OLRE model is listed for AIC comparison. The RR calibration used $B=1000$ refit replicates and $N_{\mathrm{quad}}=50$. The CBPP refit calibration had 16 singular simulated refits and 0 refit failures; singular simulated refits are part of the fitted-model calibration distribution rather than a failure of the observed model.}
+\end{table}

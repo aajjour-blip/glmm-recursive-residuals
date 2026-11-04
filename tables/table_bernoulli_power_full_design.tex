@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Completed Bernoulli omitted-covariate simulation by design size. Entries are empirical rejection rates for the null case and for omitted-covariate effects. Null cells use $N_{\mathrm{null}}=500$ datasets per design cell, except $(m,n_i)=(200,12)$ where 498 fits were successful; alternative cells use $N_{\mathrm{alt}}=200$ datasets per design cell. Each fitted dataset used $B=200$ refit-calibration simulations.}
+\label{tab:bernoulli-power-full-design}
+\begin{tabular*}{\textwidth}{@{}c@{\extracolsep{\fill}}crrrrr@{}}
+\toprule
+$m$ & $n_i$ & $\gamma=0$ & $\gamma=.25$ & $\gamma=.50$ & $\gamma=.75$ & $\gamma=1.00$ \\
+\midrule
+50 & 4 & 6.0\% & 9.0\% & 15.5\% & 28.5\% & 37.5\% \\
+50 & 8 & 7.2\% & 11.0\% & 22.0\% & 47.0\% & 77.0\% \\
+50 & 12 & 7.4\% & 8.5\% & 25.0\% & 69.5\% & 95.0\% \\
+100 & 4 & 6.8\% & 9.5\% & 26.5\% & 50.5\% & 79.0\% \\
+100 & 8 & 5.4\% & 12.0\% & 42.5\% & 88.0\% & 99.0\% \\
+100 & 12 & 6.2\% & 19.5\% & 60.5\% & 97.5\% & 100.0\% \\
+200 & 4 & 6.0\% & 17.5\% & 43.0\% & 87.0\% & 98.5\% \\
+200 & 8 & 5.2\% & 21.0\% & 84.0\% & 99.5\% & 100.0\% \\
+200 & 12 & 5.8\% & 33.5\% & 95.0\% & 100.0\% & 100.0\% \\
+\bottomrule
+\end{tabular*}
+\end{table}

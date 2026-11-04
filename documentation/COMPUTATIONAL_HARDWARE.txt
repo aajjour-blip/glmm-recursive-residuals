@@ -1,0 +1,6 @@
+MacBookPro16,1
+34359738368
+ProductName:		macOS
+ProductVersion:		26.7.1
+BuildVersion:		25G241
+Darwin [HOST_REDACTED] 25.6.0 Darwin [HOST_REDACTED] Version 25.6.0: Tue Aug 18 17:46:40 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_X86_64 x86_64

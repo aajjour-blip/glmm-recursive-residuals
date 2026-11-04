@@ -1,0 +1,5 @@
+dataset,model,DHARMa_uniformity_p,DHARMa_dispersion_p,DHARMa_zeroInflation_p,DHARMa_outlier_p
+Salamanders,Poisson RI,2.221706464861889e-5,0.194,0,0
+Salamanders,NB2 RI,0.5088075064759081,0.362,0.624,0.82
+Salamanders,ZIP RI,0.023550714969101858,0.016,0.95,0.24
+Salamanders,ZINB RI,0.9736571861570709,0.694,0.99,1

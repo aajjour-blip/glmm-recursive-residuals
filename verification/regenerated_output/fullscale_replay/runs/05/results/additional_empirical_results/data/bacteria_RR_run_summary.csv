@@ -1,0 +1,2 @@
+dataset,family,B_ENV_requested,B_ENV_successful,N_QUAD,refit_failures,rr_failures_skipped,singular_refits,p_combo_minP,p_min_raw,best_stat,detected_combo
+bacteria,binomial,1000,1000,40,0,0,0,0.06993006993006994,0.012987012987012988,Tinf_week_num,FALSE

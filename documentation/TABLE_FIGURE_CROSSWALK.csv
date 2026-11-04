@@ -1,0 +1,18 @@
+manuscript_reference_type,manuscript_reference,submitted_file,generating_script_or_archived_source,validation_note
+Finalized manuscript: table input,table_diagnostic_signatures.tex,tables/table_diagnostic_signatures.tex,code/08_simulation_catalogue.R; data/simulation_catalogue/ (archived),Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_simulation_design_summary.tex,tables/table_simulation_design_summary.tex,code/08_simulation_catalogue.R; data/simulation_catalogue/ (archived),Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_detection_by_family.tex,tables/table_detection_by_family.tex,code/08_simulation_catalogue.R; data/simulation_catalogue/ (archived),Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_bernoulli_power_full_by_gamma.tex,tables/table_bernoulli_power_full_by_gamma.tex,code/01_simulation_bernoulli_power.R; code/07_format_tables.py,Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_bernoulli_power_full_design.tex,tables/table_bernoulli_power_full_design.tex,code/01_simulation_bernoulli_power.R; code/07_format_tables.py,Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_dharma_head_to_head_bernoulli.tex,tables/table_dharma_head_to_head_bernoulli.tex,code/02_simulation_bernoulli_dharma_comparison.R,Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_epil_main_refinement.tex,tables/table_epil_main_refinement.tex,code/03_empirical_epilepsy_refinement.R; code/05_empirical_additional_examples.R,Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_empirical_cbpp.tex,tables/table_empirical_cbpp.tex,code/09_empirical_cbpp.R; data/empirical/ (archived),Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_empirical_salamanders_rr_summary.tex,tables/table_empirical_salamanders_rr_summary.tex,code/04_empirical_salamanders_analysis.R,Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_refinement_before_after_short.tex,tables/table_refinement_before_after_short.tex,code/03_empirical_epilepsy_refinement.R; code/05_empirical_additional_examples.R,Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_ablation_epil_pcombo.tex,tables/table_ablation_epil_pcombo.tex,code/06_ablation_epilepsy.R; code/07_format_tables.py,Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_ablation_epil_components.tex,tables/table_ablation_epil_components.tex,code/06_ablation_epilepsy.R; code/07_format_tables.py,Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_ablation_epil_components_refined.tex,tables/table_ablation_epil_components_refined.tex,code/06_ablation_epilepsy.R; code/07_format_tables.py,Byte-identical to finalized LaTeX table
+Finalized manuscript: table input,table_ablation_epil_rates.tex,tables/table_ablation_epil_rates.tex,code/06_ablation_epilepsy.R; code/07_format_tables.py,Byte-identical to finalized LaTeX table
+Finalized manuscript: numbered figure,Figure_1.pdf,paper_figures/Figure_1.pdf,code/01_simulation_bernoulli_power.R,Finalized figure PDF copied byte-for-byte; not claimed identical to raw program plot
+Finalized manuscript: numbered figure,Figure_2.pdf,paper_figures/Figure_2.pdf,code/02_simulation_bernoulli_dharma_comparison.R,Finalized figure PDF copied byte-for-byte; not claimed identical to raw program plot
+Finalized manuscript: numbered figure,Figure_B1.pdf,paper_figures/Figure_B1.pdf,code/06_ablation_epilepsy.R,Finalized figure PDF copied byte-for-byte; not claimed identical to raw program plot

@@ -1,0 +1,47 @@
+{
+  "scenario_count": 41,
+  "family_counts": {
+    "binomial": 16,
+    "poisson": 21,
+    "gamma": 4
+  },
+  "scenario_set_identical": true,
+  "source_scripts_inspected": [
+    "code/01_simulation_bernoulli_power.R",
+    "code/02_simulation_bernoulli_dharma_comparison.R"
+  ],
+  "source_q1_design": {
+    "mode": "FULL_Q1",
+    "N_ALT": 200,
+    "N_NULL": 500,
+    "B_CAL": 200,
+    "M_VALUES": [
+      50,
+      100,
+      200
+    ],
+    "N_VALUES": [
+      4,
+      8,
+      12
+    ],
+    "N_QUAD": 25,
+    "master_seed": 2026
+  },
+  "source_02_design": {
+    "scenarios": [
+      "null",
+      "omitted_x2_gamma05",
+      "omitted_x2_gamma10",
+      "serial_dependence_rho10"
+    ],
+    "N_REP": 200,
+    "B_CAL": 200,
+    "DHARMA_NSIM": 1000,
+    "M": 100,
+    "N_I": 8,
+    "N_QUAD": 25
+  },
+  "verified_catalogue_generator": false,
+  "warning": "Neither identified Bernoulli design is established as the original 41-scenario catalogue; do not substitute pilot results for catalogue reproduction."
+}

@@ -1,0 +1,260 @@
+Loading required package: Matrix
+This is DHARMa 0.4.7. For overview type '?DHARMa'. For recent changes, type news(package = 'DHARMa')
+
+Attaching package: ‘statmod’
+
+The following object is masked from ‘package:glmmTMB’:
+
+    tweedie
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:MASS’:
+
+    select
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Outputs will be written to:
+ [REDACTED_LOCAL_PATH] 
+
+
+Loading MASS::bacteria...
+
+============================================================
+Binary RR example: bacteria 
+============================================================
+bacteria RR simulation 50 of 1000 
+boundary (singular) fit: see help('isSingular')
+boundary (singular) fit: see help('isSingular')
+bacteria RR simulation 100 of 1000 
+bacteria RR simulation 150 of 1000 
+bacteria RR simulation 200 of 1000 
+bacteria RR simulation 250 of 1000 
+bacteria RR simulation 300 of 1000 
+bacteria RR simulation 350 of 1000 
+boundary (singular) fit: see help('isSingular')
+bacteria RR simulation 400 of 1000 
+bacteria RR simulation 450 of 1000 
+bacteria RR simulation 500 of 1000 
+bacteria RR simulation 550 of 1000 
+bacteria RR simulation 600 of 1000 
+bacteria RR simulation 650 of 1000 
+boundary (singular) fit: see help('isSingular')
+bacteria RR simulation 700 of 1000 
+bacteria RR simulation 750 of 1000 
+bacteria RR simulation 800 of 1000 
+boundary (singular) fit: see help('isSingular')
+bacteria RR simulation 850 of 1000 
+boundary (singular) fit: see help('isSingular')
+bacteria RR simulation 900 of 1000 
+bacteria RR simulation 950 of 1000 
+bacteria RR simulation 1000 of 1000 
+
+Loading glmmTMB::Owls...
+
+============================================================
+Count RR example: Owls Poisson_RI 
+============================================================
+Owls Poisson_RI RR simulation 50 of 1000 
+Owls Poisson_RI RR simulation 100 of 1000 
+Owls Poisson_RI RR simulation 150 of 1000 
+Owls Poisson_RI RR simulation 200 of 1000 
+Owls Poisson_RI RR simulation 250 of 1000 
+Owls Poisson_RI RR simulation 300 of 1000 
+Owls Poisson_RI RR simulation 350 of 1000 
+Owls Poisson_RI RR simulation 400 of 1000 
+Owls Poisson_RI RR simulation 450 of 1000 
+Owls Poisson_RI RR simulation 500 of 1000 
+Owls Poisson_RI RR simulation 550 of 1000 
+Owls Poisson_RI RR simulation 600 of 1000 
+Owls Poisson_RI RR simulation 650 of 1000 
+Owls Poisson_RI RR simulation 700 of 1000 
+Owls Poisson_RI RR simulation 750 of 1000 
+Owls Poisson_RI RR simulation 800 of 1000 
+Owls Poisson_RI RR simulation 850 of 1000 
+Owls Poisson_RI RR simulation 900 of 1000 
+Owls Poisson_RI RR simulation 950 of 1000 
+Owls Poisson_RI RR simulation 1000 of 1000 
+
+============================================================
+Count RR example: Owls NB2_RI 
+============================================================
+Owls NB2_RI RR simulation 50 of 1000 
+Owls NB2_RI RR simulation 100 of 1000 
+Owls NB2_RI RR simulation 150 of 1000 
+Owls NB2_RI RR simulation 200 of 1000 
+Owls NB2_RI RR simulation 250 of 1000 
+Owls NB2_RI RR simulation 300 of 1000 
+Owls NB2_RI RR simulation 350 of 1000 
+Owls NB2_RI RR simulation 400 of 1000 
+Owls NB2_RI RR simulation 450 of 1000 
+Owls NB2_RI RR simulation 500 of 1000 
+Owls NB2_RI RR simulation 550 of 1000 
+Owls NB2_RI RR simulation 600 of 1000 
+Owls NB2_RI RR simulation 650 of 1000 
+Owls NB2_RI RR simulation 700 of 1000 
+Owls NB2_RI RR simulation 750 of 1000 
+Owls NB2_RI RR simulation 800 of 1000 
+Owls NB2_RI RR simulation 850 of 1000 
+Owls NB2_RI RR simulation 900 of 1000 
+Owls NB2_RI RR simulation 950 of 1000 
+Owls NB2_RI RR simulation 1000 of 1000 
+
+============================================================
+Count RR example: Owls ZINB_RI 
+============================================================
+Owls ZINB_RI RR simulation 50 of 1000 
+Owls ZINB_RI RR simulation 100 of 1000 
+Owls ZINB_RI RR simulation 150 of 1000 
+Owls ZINB_RI RR simulation 200 of 1000 
+Owls ZINB_RI RR simulation 250 of 1000 
+Owls ZINB_RI RR simulation 300 of 1000 
+Owls ZINB_RI RR simulation 350 of 1000 
+Owls ZINB_RI RR simulation 400 of 1000 
+Owls ZINB_RI RR simulation 450 of 1000 
+Owls ZINB_RI RR simulation 500 of 1000 
+Owls ZINB_RI RR simulation 550 of 1000 
+Owls ZINB_RI RR simulation 600 of 1000 
+Owls ZINB_RI RR simulation 650 of 1000 
+Owls ZINB_RI RR simulation 700 of 1000 
+Owls ZINB_RI RR simulation 750 of 1000 
+Owls ZINB_RI RR simulation 800 of 1000 
+Owls ZINB_RI RR simulation 850 of 1000 
+Owls ZINB_RI RR simulation 900 of 1000 
+Owls ZINB_RI RR simulation 950 of 1000 
+Owls ZINB_RI RR simulation 1000 of 1000 
+
+Loading MASS::epil...
+
+============================================================
+Count RR example: epil Poisson_RI 
+============================================================
+epil Poisson_RI RR simulation 50 of 1000 
+epil Poisson_RI RR simulation 100 of 1000 
+epil Poisson_RI RR simulation 150 of 1000 
+epil Poisson_RI RR simulation 200 of 1000 
+epil Poisson_RI RR simulation 250 of 1000 
+epil Poisson_RI RR simulation 300 of 1000 
+epil Poisson_RI RR simulation 350 of 1000 
+epil Poisson_RI RR simulation 400 of 1000 
+epil Poisson_RI RR simulation 450 of 1000 
+epil Poisson_RI RR simulation 500 of 1000 
+epil Poisson_RI RR simulation 550 of 1000 
+epil Poisson_RI RR simulation 600 of 1000 
+epil Poisson_RI RR simulation 650 of 1000 
+epil Poisson_RI RR simulation 700 of 1000 
+epil Poisson_RI RR simulation 750 of 1000 
+epil Poisson_RI RR simulation 800 of 1000 
+epil Poisson_RI RR simulation 850 of 1000 
+epil Poisson_RI RR simulation 900 of 1000 
+epil Poisson_RI RR simulation 950 of 1000 
+epil Poisson_RI RR simulation 1000 of 1000 
+
+============================================================
+Count RR example: epil NB2_RI 
+============================================================
+epil NB2_RI RR simulation 50 of 1000 
+epil NB2_RI RR simulation 100 of 1000 
+epil NB2_RI RR simulation 150 of 1000 
+epil NB2_RI RR simulation 200 of 1000 
+epil NB2_RI RR simulation 250 of 1000 
+epil NB2_RI RR simulation 300 of 1000 
+epil NB2_RI RR simulation 350 of 1000 
+epil NB2_RI RR simulation 400 of 1000 
+epil NB2_RI RR simulation 450 of 1000 
+epil NB2_RI RR simulation 500 of 1000 
+epil NB2_RI RR simulation 550 of 1000 
+epil NB2_RI RR simulation 600 of 1000 
+epil NB2_RI RR simulation 650 of 1000 
+epil NB2_RI RR simulation 700 of 1000 
+epil NB2_RI RR simulation 750 of 1000 
+epil NB2_RI RR simulation 800 of 1000 
+epil NB2_RI RR simulation 850 of 1000 
+epil NB2_RI RR simulation 900 of 1000 
+epil NB2_RI RR simulation 950 of 1000 
+epil NB2_RI RR simulation 1000 of 1000 
+Warning message:
+In (function (start, objective, gradient = NULL, hessian = NULL,  :
+  NA/NaN function evaluation
+
+Loading datasets::ChickWeight...
+
+============================================================
+Gamma RR example: ChickWeight Gamma_RI 
+============================================================
+ChickWeight Gamma_RI RR simulation 50 of 1000 
+ChickWeight Gamma_RI RR simulation 100 of 1000 
+ChickWeight Gamma_RI RR simulation 150 of 1000 
+ChickWeight Gamma_RI RR simulation 200 of 1000 
+ChickWeight Gamma_RI RR simulation 250 of 1000 
+ChickWeight Gamma_RI RR simulation 300 of 1000 
+ChickWeight Gamma_RI RR simulation 350 of 1000 
+ChickWeight Gamma_RI RR simulation 400 of 1000 
+ChickWeight Gamma_RI RR simulation 450 of 1000 
+ChickWeight Gamma_RI RR simulation 500 of 1000 
+ChickWeight Gamma_RI RR simulation 550 of 1000 
+ChickWeight Gamma_RI RR simulation 600 of 1000 
+ChickWeight Gamma_RI RR simulation 650 of 1000 
+ChickWeight Gamma_RI RR simulation 700 of 1000 
+ChickWeight Gamma_RI RR simulation 750 of 1000 
+ChickWeight Gamma_RI RR simulation 800 of 1000 
+ChickWeight Gamma_RI RR simulation 850 of 1000 
+ChickWeight Gamma_RI RR simulation 900 of 1000 
+ChickWeight Gamma_RI RR simulation 950 of 1000 
+ChickWeight Gamma_RI RR simulation 1000 of 1000 
+
+Loading lme4::sleepstudy...
+
+============================================================
+Gamma RR example: sleepstudy Gamma_RI 
+============================================================
+sleepstudy Gamma_RI RR simulation 50 of 1000 
+sleepstudy Gamma_RI RR simulation 100 of 1000 
+sleepstudy Gamma_RI RR simulation 150 of 1000 
+sleepstudy Gamma_RI RR simulation 200 of 1000 
+sleepstudy Gamma_RI RR simulation 250 of 1000 
+sleepstudy Gamma_RI RR simulation 300 of 1000 
+sleepstudy Gamma_RI RR simulation 350 of 1000 
+sleepstudy Gamma_RI RR simulation 400 of 1000 
+sleepstudy Gamma_RI RR simulation 450 of 1000 
+sleepstudy Gamma_RI RR simulation 500 of 1000 
+sleepstudy Gamma_RI RR simulation 550 of 1000 
+sleepstudy Gamma_RI RR simulation 600 of 1000 
+sleepstudy Gamma_RI RR simulation 650 of 1000 
+sleepstudy Gamma_RI RR simulation 700 of 1000 
+sleepstudy Gamma_RI RR simulation 750 of 1000 
+sleepstudy Gamma_RI RR simulation 800 of 1000 
+sleepstudy Gamma_RI RR simulation 850 of 1000 
+sleepstudy Gamma_RI RR simulation 900 of 1000 
+sleepstudy Gamma_RI RR simulation 950 of 1000 
+sleepstudy Gamma_RI RR simulation 1000 of 1000 
+DHARMa: Owls Poisson_RI 
+DHARMa:testOutliers with type = binomial may have inflated Type I error rates for integer-valued distributions. To get a more exact result, it is recommended to re-run testOutliers with type = 'bootstrap'. See ?testOutliers for details
+DHARMa:testOutliers with type = binomial may have inflated Type I error rates for integer-valued distributions. To get a more exact result, it is recommended to re-run testOutliers with type = 'bootstrap'. See ?testOutliers for details
+DHARMa: Owls NB2_RI 
+DHARMa: Owls ZIP_RI 
+DHARMa: Owls ZINB_RI 
+DHARMa: epil Poisson_RI 
+qu = 0.75, log(sigma) = -2.645972 : outer Newton did not converge fully.
+DHARMa: epil NB2_RI 
+DHARMa: ChickWeight Gamma_RI 
+DHARMa: sleepstudy Gamma_RI 
+Warning message:
+In newton(lsp = lsp, X = G$X, y = G$y, Eb = G$Eb, UrS = G$UrS, L = G$L,  :
+  Fitting terminated with step failure - check results carefully
+
+DONE.
+All outputs are in:
+[REDACTED_LOCAL_PATH] 
+
+Output folder:
+additional_empirical_results

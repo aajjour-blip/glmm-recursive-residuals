@@ -1,0 +1,9 @@
+dataset,family,B_ENV_requested,B_ENV_successful,N_QUAD,refit_failures,rr_failures_skipped,singular_refits,p_combo_minP,p_min_raw,best_stat,detected_combo,model_name,zero_inflated,B_ENV,gamma_phi_assumption
+bacteria,binomial,1000,1000,40,0,0,0,0.06993006993006994,0.01298701298701298,Tinf_week_num,FALSE,NA,NA,NA,NA
+Owls,poisson,NA,NA,40,0,NA,NA,9.99000999000999e-4,9.99000999000999e-4,Tinf_ArrivalTime_num,TRUE,Poisson_RI,FALSE,1000,NA
+Owls,nbinom2,NA,NA,40,0,NA,NA,9.99000999000999e-4,9.99000999000999e-4,Tinf_ArrivalTime_num,TRUE,NB2_RI,FALSE,1000,NA
+Owls,nbinom2,NA,NA,40,0,NA,NA,9.99000999000999e-4,9.99000999000999e-4,Tinf_ArrivalTime_num,TRUE,ZINB_RI,TRUE,1000,NA
+epil,poisson,NA,NA,40,0,NA,NA,9.99000999000999e-4,9.99000999000999e-4,T2_period_num,TRUE,Poisson_RI,FALSE,1000,NA
+epil,nbinom2,NA,NA,40,0,NA,NA,9.99000999000999e-4,9.99000999000999e-4,T2_base,TRUE,NB2_RI,FALSE,1000,NA
+ChickWeight,Gamma,NA,NA,40,0,NA,NA,9.99000999000999e-4,9.99000999000999e-4,Tlag,TRUE,Gamma_RI,NA,1000,phi = sigma(fit); shape = 1/phi
+sleepstudy,Gamma,NA,NA,40,0,NA,NA,9.99000999000999e-4,9.99000999000999e-4,Tlag,TRUE,Gamma_RI,NA,1000,phi = sigma(fit); shape = 1/phi

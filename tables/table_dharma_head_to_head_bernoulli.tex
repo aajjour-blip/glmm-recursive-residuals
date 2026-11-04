@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Head-to-head Bernoulli simulation comparison between recursive residuals and standard non-refit \texttt{DHARMa} summaries. Recursive-residual detection uses the calibrated omnibus statistic; \texttt{DHARMa} detection is reported using the raw minimum of the available standard tests and a Bonferroni-adjusted minimum rule. Parentheses give Wilson 95\% Monte Carlo confidence intervals.}
+\label{tab:dharma-head-to-head-bernoulli}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X r r r@{}}
+\toprule
+Scenario & RR omnibus & \texttt{DHARMa} raw-min & \texttt{DHARMa} Bonferroni \\
+\midrule
+Null & 7.0\% (4.2, 11.4) & 2.0\% (0.8, 5.0) & 0.0\% (0.0, 1.9) \\
+Omitted $x_2$, $\gamma=0.50$ & 45.0\% (38.3, 51.9) & 3.0\% (1.4, 6.4) & 0.0\% (0.0, 1.9) \\
+Omitted $x_2$, $\gamma=1.00$ & 99.0\% (96.4, 99.7) & 2.5\% (1.1, 5.7) & 0.5\% (0.1, 2.8) \\
+Serial dependence, $\rho=1.00$ & 37.5\% (31.1, 44.4) & 3.0\% (1.4, 6.4) & 0.0\% (0.0, 1.9) \\
+\bottomrule
+\end{tabularx}
+\end{table}

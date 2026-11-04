@@ -1,0 +1,4 @@
+example,previous_model,previous_RR_p_combo,previous_best_stat,previous_interpretation
+Salamanders,NB2_RI,0.416583,Tlag,NB2 already removed the main Poisson RR lack-of-fit signal.
+Owls,ZINB_RI,9.99e-4,Tinf_ArrivalTime_num,ZINB still rejected; RR suggested residual arrival-time/process structure.
+epil,NB2_RI,9.99e-4,T2_base,NB2 still rejected; RR suggested residual baseline/period structure.

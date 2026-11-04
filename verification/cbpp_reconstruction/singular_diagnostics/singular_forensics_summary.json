@@ -1,0 +1,127 @@
+{
+  "singular_refits_tested": 16,
+  "baseline_mismatching_replicates": 15,
+  "replicates_reconciled_by_at_least_one_tie_rule": 1,
+  "replicates_still_unreconciled": 15,
+  "replicate_details": [
+    {
+      "replicate": 103,
+      "baseline_error": 0.146835642240083,
+      "best_ordering": "exact",
+      "best_max_error": 0.146835642240083,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 153,
+      "baseline_error": 0.506575878251648,
+      "best_ordering": "round_decimal_16",
+      "best_max_error": 0.155649020746077,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 206,
+      "baseline_error": 0.234806052168763,
+      "best_ordering": "round_decimal_16",
+      "best_max_error": 0.190362286984004,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 423,
+      "baseline_error": 0.098284751704258,
+      "best_ordering": "round_decimal_16",
+      "best_max_error": 0.0283063431530726,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 431,
+      "baseline_error": 0.0898011947725478,
+      "best_ordering": "round_decimal_16",
+      "best_max_error": 0.0242408374000557,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 485,
+      "baseline_error": 0.0758360073867793,
+      "best_ordering": "exact",
+      "best_max_error": 0.0758360073867793,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 511,
+      "baseline_error": 0.125288013315021,
+      "best_ordering": "exact",
+      "best_max_error": 0.125288013315021,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 519,
+      "baseline_error": 0.0276678619865039,
+      "best_ordering": "round_decimal_15",
+      "best_max_error": 0.0183742833641961,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 655,
+      "baseline_error": 0.139090214272169,
+      "best_ordering": "exact",
+      "best_max_error": 0.139090214272169,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 676,
+      "baseline_error": 0.0824940371055541,
+      "best_ordering": "round_decimal_16",
+      "best_max_error": 0.0793791101316035,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 682,
+      "baseline_error": 0.59864716258228,
+      "best_ordering": "exact",
+      "best_max_error": 0.59864716258228,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 768,
+      "baseline_error": 0.00994873750450509,
+      "best_ordering": "round_decimal_14",
+      "best_max_error": 0.00667525534642677,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 831,
+      "baseline_error": 0.0,
+      "best_ordering": "exact",
+      "best_max_error": 0.0,
+      "ordering_rules_matching_both": [
+        "exact",
+        "round_decimal_16",
+        "signif_16",
+        "signif_15",
+        "absolute_bucket_1e-16"
+      ]
+    },
+    {
+      "replicate": 837,
+      "baseline_error": 0.0452476700182848,
+      "best_ordering": "exact",
+      "best_max_error": 0.0452476700182848,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 939,
+      "baseline_error": 0.274443963903445,
+      "best_ordering": "exact",
+      "best_max_error": 0.274443963903445,
+      "ordering_rules_matching_both": []
+    },
+    {
+      "replicate": 952,
+      "baseline_error": 0.0146119405711364,
+      "best_ordering": "exact",
+      "best_max_error": 0.0146119405711364,
+      "ordering_rules_matching_both": []
+    }
+  ],
+  "caveat": "Matching an alternate tie rule is evidence of ordering sensitivity, not proof of historical generator behavior."
+}

@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{One-factor ablation of the recursive-residual diagnostic on the epilepsy data. Each row replaces one building block and holds the other two at the proposed choice. Entries are calibrated omnibus $p$-values based on $B=1000$ simulated reference datasets; the last two rows are classical uncalibrated $p$-values computed on the sequential residuals. The last column gives the leading component for the NB2 random-intercept model.}
+\label{tab:ablation-epil}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccl}
+\toprule
+Block & Variant & Poisson RI & NB2 RI & NB2 refined & Leading (NB2 RI) \\
+\midrule
+Proposed & Sequential residuals, refit reference, full set & 0.001 & 0.001 & 0.166 & $T_{2}$ (baseline) \\
+\midrule
+(i) Residual & Marginal residuals (prior of $b_i$, no updating) & 0.001 & 0.001 & 0.130 & $T_{\infty}$ (baseline) \\
+ & Full-cluster posterior residuals & 0.001 & 0.001 & 0.018 & $T_{2}$ (period) \\
+\midrule
+(ii) Reference & Plug-in reference (simulate at $\hat\theta$, no refit) & 0.001 & 0.130 & 0.315 & $T_{\max r}$ \\
+ & Known-parameter reference (i.i.d.\ $N(0,1)$) & 0.001 & 0.165 & 0.338 & $T_{\max r}$ \\
+\midrule
+(i)+(ii) Both & Marginal residuals with plug-in reference & 0.111 & 0.736 & 0.865 & $T_{2}$ (baseline) \\
+\midrule
+(iii) Statistics & Indexed cumulative statistics only & 0.001 & 0.001 & 0.110 & $T_{2}$ (baseline) \\
+ & Direct distributional statistics only & 0.001 & 0.032 & 0.065 & $T_{\mathrm{disp}}$ \\
+ & Classical Kolmogorov--Smirnov, uncalibrated & 0.102 & 0.597 & 0.752 & -- \\
+ & Classical Shapiro--Wilk, uncalibrated & 0.000 & 0.003 & 0.003 & -- \\
+\bottomrule
+\end{tabular}}
+\end{table}

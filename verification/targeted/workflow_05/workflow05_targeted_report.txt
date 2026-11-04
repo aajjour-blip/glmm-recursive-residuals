@@ -1,0 +1,16 @@
+WORKFLOW05_REPORT Owls_model_AIC.csv rows 4 differences 0
+WORKFLOW05_REPORT epil_model_AIC.csv rows 2 differences 0
+WORKFLOW05_REPORT ChickWeight_model_AIC.csv rows 2 differences 0
+WORKFLOW05_REPORT sleepstudy_model_AIC.csv rows 2 differences 0
+WORKFLOW05_REPORT ALL_remaining_examples_RR_summary_B1000.csv rows 8 differences 0
+WORKFLOW05_DHARMA_FILE Owls_DHARMa_tests_B1000.csv rows 4 differences 1 byte_identical False
+DHARMA_DIFFERENCE 2 DHARMa_outlier_p 1 0.86
+WORKFLOW05_DHARMA_FILE epil_DHARMa_tests_B1000.csv rows 2 differences 2 byte_identical False
+DHARMA_DIFFERENCE 1 DHARMa_outlier_p 0.22 0.24
+DHARMA_DIFFERENCE 2 DHARMa_outlier_p 0.52 0.56
+WORKFLOW05_DHARMA_FILE ChickWeight_DHARMa_tests_B1000.csv rows 1 differences 0 byte_identical True
+WORKFLOW05_DHARMA_FILE sleepstudy_DHARMa_tests_B1000.csv rows 1 differences 0 byte_identical True
+WORKFLOW05_DHARMA_FILE bacteria_DHARMa_AIC_B1000.csv rows 1 differences 0 byte_identical True
+WORKFLOW05_DHARMA_DIFFERENCES 3 DECISION_CHANGES 0
+WORKFLOW05_TARGETED_EXECUTION_PASS
+WORKFLOW05_DHARMA_NOT_EXACT

@@ -1,0 +1,4 @@
+family,scenarios,detected,rate
+binomial,16,4,0.25
+gamma,4,2,0.5
+poisson,21,15,0.7142857142857143

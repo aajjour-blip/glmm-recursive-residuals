@@ -1,0 +1,8 @@
+# Generated manually for manuscript prototype
+export(glmm_rr)
+export(summary.glmm_rr)
+export(plot.glmm_rr)
+S3method(summary, glmm_rr)
+S3method(print, glmm_rr)
+S3method(print, summary.glmm_rr)
+S3method(plot, glmm_rr)

@@ -1,0 +1,117 @@
+This is DHARMa 0.4.7. For overview type '?DHARMa'. For recent changes, type news(package = 'DHARMa')
+
+Attaching package: ‘statmod’
+
+The following object is masked from ‘package:glmmTMB’:
+
+    tweedie
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Outputs will be written to:
+ [REDACTED_LOCAL_PATH] 
+
+Warning message:
+In finalizeTMB(TMBStruc, obj, fit, h, data.tmb.old) :
+  Model convergence problem; singular convergence (7). See vignette('troubleshooting'), help('diagnose')
+
+============================================================
+Running RR for: Poisson_RI 
+family_type: poisson zero_inflated: FALSE 
+============================================================
+Poisson_RI RR simulation 50 of 1000 
+Poisson_RI RR simulation 100 of 1000 
+Poisson_RI RR simulation 150 of 1000 
+Poisson_RI RR simulation 200 of 1000 
+Poisson_RI RR simulation 250 of 1000 
+Poisson_RI RR simulation 300 of 1000 
+Poisson_RI RR simulation 350 of 1000 
+Poisson_RI RR simulation 400 of 1000 
+Poisson_RI RR simulation 450 of 1000 
+Poisson_RI RR simulation 500 of 1000 
+Poisson_RI RR simulation 550 of 1000 
+Poisson_RI RR simulation 600 of 1000 
+Poisson_RI RR simulation 650 of 1000 
+Poisson_RI RR simulation 700 of 1000 
+Poisson_RI RR simulation 750 of 1000 
+Poisson_RI RR simulation 800 of 1000 
+Poisson_RI RR simulation 850 of 1000 
+Poisson_RI RR simulation 900 of 1000 
+Poisson_RI RR simulation 950 of 1000 
+Poisson_RI RR simulation 1000 of 1000 
+
+============================================================
+Running RR for: NB2_RI 
+family_type: nbinom2 zero_inflated: FALSE 
+============================================================
+NB2_RI RR simulation 50 of 1000 
+NB2_RI RR simulation 100 of 1000 
+NB2_RI RR simulation 150 of 1000 
+NB2_RI RR simulation 200 of 1000 
+NB2_RI RR simulation 250 of 1000 
+NB2_RI RR simulation 300 of 1000 
+NB2_RI RR simulation 350 of 1000 
+NB2_RI RR simulation 400 of 1000 
+NB2_RI RR simulation 450 of 1000 
+NB2_RI RR simulation 500 of 1000 
+NB2_RI RR simulation 550 of 1000 
+NB2_RI RR simulation 600 of 1000 
+NB2_RI RR simulation 650 of 1000 
+NB2_RI RR simulation 700 of 1000 
+NB2_RI RR simulation 750 of 1000 
+NB2_RI RR simulation 800 of 1000 
+NB2_RI RR simulation 850 of 1000 
+NB2_RI RR simulation 900 of 1000 
+NB2_RI RR simulation 950 of 1000 
+NB2_RI RR simulation 1000 of 1000 
+
+============================================================
+Running RR for: ZINB_RI 
+family_type: nbinom2 zero_inflated: TRUE 
+============================================================
+ZINB_RI RR simulation 50 of 1000 
+ZINB_RI RR simulation 100 of 1000 
+ZINB_RI RR simulation 150 of 1000 
+ZINB_RI RR simulation 200 of 1000 
+ZINB_RI RR simulation 250 of 1000 
+ZINB_RI RR simulation 300 of 1000 
+ZINB_RI RR simulation 350 of 1000 
+ZINB_RI RR simulation 400 of 1000 
+ZINB_RI RR simulation 450 of 1000 
+ZINB_RI RR simulation 500 of 1000 
+ZINB_RI RR simulation 550 of 1000 
+ZINB_RI RR simulation 600 of 1000 
+ZINB_RI RR simulation 650 of 1000 
+ZINB_RI RR simulation 700 of 1000 
+ZINB_RI RR simulation 750 of 1000 
+ZINB_RI RR simulation 800 of 1000 
+ZINB_RI RR simulation 850 of 1000 
+ZINB_RI RR simulation 900 of 1000 
+ZINB_RI RR simulation 950 of 1000 
+ZINB_RI RR simulation 1000 of 1000 
+Running DHARMa diagnostics...
+DHARMa:testOutliers with type = binomial may have inflated Type I error rates for integer-valued distributions. To get a more exact result, it is recommended to re-run testOutliers with type = 'bootstrap'. See ?testOutliers for details
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+DHARMa:testOutliers with type = binomial may have inflated Type I error rates for integer-valued distributions. To get a more exact result, it is recommended to re-run testOutliers with type = 'bootstrap'. See ?testOutliers for details
+
+DONE.
+All outputs are in:
+[REDACTED_LOCAL_PATH] 
+
+Please zip this folder and save the output:
+RR_Salamanders_RR_B1000_NB2_ZINB_submission_results

@@ -1,0 +1,41 @@
+"scenario","key","variant","n","rejections","rate","ci_low","ci_high"
+"null","proposed","Sequential residuals, refit reference, full component set",200,6,0.03,0.0138203143401113,0.0638942924545192
+"null","marginal","Marginal residuals (prior of b_i, no updating)",200,11,0.055,0.0309853417034588,0.0957869987723084
+"null","fullpost","Full-cluster posterior residuals",200,12,0.06,0.0346521942543319,0.101931692957663
+"null","plugin","Plug-in reference (no refit)",200,1,0.005,0.000883168715600976,0.0277737043978929
+"null","known","Known-parameter reference (iid N(0,1))",200,0,0,0,0.0188453263772666
+"null","neither","Marginal residuals with plug-in reference (both removed)",200,0,0,0,0.0188453263772666
+"null","indexed","Indexed cumulative statistics only",200,7,0.035,0.0170555420085672,0.0704706115222907
+"null","direct","Direct distributional statistics only",200,17,0.085,0.0537457501774756,0.131895870715656
+"null","ks","Classical Kolmogorov-Smirnov, uncalibrated",200,0,0,0,0.0188453263772666
+"null","sw","Classical Shapiro-Wilk, uncalibrated",200,8,0.04,0.0204056320661523,0.0769320682009329
+"mean","proposed","Sequential residuals, refit reference, full component set",200,50,0.25,0.195081680068175,0.314340983120458
+"mean","marginal","Marginal residuals (prior of b_i, no updating)",200,83,0.415,0.348942854497576,0.48426085098656
+"mean","fullpost","Full-cluster posterior residuals",200,35,0.175,0.128605150662733,0.23364431148249
+"mean","plugin","Plug-in reference (no refit)",200,3,0.015,0.00511423779325831,0.0431657287926903
+"mean","known","Known-parameter reference (iid N(0,1))",200,2,0.01,0.00274665813354444,0.0357217617161768
+"mean","neither","Marginal residuals with plug-in reference (both removed)",200,3,0.015,0.00511423779325831,0.0431657287926903
+"mean","indexed","Indexed cumulative statistics only",200,60,0.3,0.240747446823714,0.366790683727193
+"mean","direct","Direct distributional statistics only",200,12,0.06,0.0346521942543319,0.101931692957663
+"mean","ks","Classical Kolmogorov-Smirnov, uncalibrated",200,0,0,0,0.0188453263772666
+"mean","sw","Classical Shapiro-Wilk, uncalibrated",200,10,0.05,0.0273826456007639,0.089578148138776
+"serial1","proposed","Sequential residuals, refit reference, full component set",200,65,0.325,0.263915715392343,0.3926801488397
+"serial1","marginal","Marginal residuals (prior of b_i, no updating)",200,23,0.115,0.0778637323256195,0.166647168984876
+"serial1","fullpost","Full-cluster posterior residuals",200,14,0.07,0.0421521718283428,0.114054808856106
+"serial1","plugin","Plug-in reference (no refit)",200,45,0.225,0.172623697150891,0.287741232356605
+"serial1","known","Known-parameter reference (iid N(0,1))",200,42,0.21,0.15928412069979,0.271646168599025
+"serial1","neither","Marginal residuals with plug-in reference (both removed)",200,6,0.03,0.0138203143401113,0.0638942924545192
+"serial1","indexed","Indexed cumulative statistics only",200,36,0.18,0.132946258594202,0.239114750287249
+"serial1","direct","Direct distributional statistics only",200,15,0.075,0.045974917184382,0.120043610236295
+"serial1","ks","Classical Kolmogorov-Smirnov, uncalibrated",200,0,0,0,0.0188453263772666
+"serial1","sw","Classical Shapiro-Wilk, uncalibrated",200,9,0.045,0.023852543001493,0.0832967040018196
+"serial2","proposed","Sequential residuals, refit reference, full component set",200,196,0.98,0.949712913094173,0.992195573583651
+"serial2","marginal","Marginal residuals (prior of b_i, no updating)",200,125,0.625,0.556143036989782,0.689145631415902
+"serial2","fullpost","Full-cluster posterior residuals",200,30,0.15,0.10713593562242,0.206055792841667
+"serial2","plugin","Plug-in reference (no refit)",200,190,0.95,0.910421851861224,0.972617354399236
+"serial2","known","Known-parameter reference (iid N(0,1))",200,192,0.96,0.923067931799067,0.979594367933848
+"serial2","neither","Marginal residuals with plug-in reference (both removed)",200,95,0.475,0.406916226465711,0.544026039853152
+"serial2","indexed","Indexed cumulative statistics only",200,153,0.765,0.701586311172375,0.818425665847674
+"serial2","direct","Direct distributional statistics only",200,33,0.165,0.119968553282173,0.222657815390595
+"serial2","ks","Classical Kolmogorov-Smirnov, uncalibrated",200,1,0.005,0.000883168715600976,0.0277737043978929
+"serial2","sw","Classical Shapiro-Wilk, uncalibrated",200,16,0.08,0.04984058588976,0.125989488267144

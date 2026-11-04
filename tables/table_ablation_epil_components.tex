@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Component-level calibrated $p$-values for the NB2 random-intercept epilepsy model under the three residual constructions (refit reference) and under the plug-in and known-parameter references (sequential residuals); $B=1000$.}
+\label{tab:ablation-epil-components}
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}ccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{Residual construction (refit reference)} & \multicolumn{2}{c}{Reference (sequential residuals)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Statistic & Sequential & Marginal & Full posterior & Plug-in & Known-parameter \\
+\midrule
+$T_{\infty}$ (period) & 0.086 & 0.072 & 0.017 & 0.821 & 0.837 \\
+$T_{2}$ (period) & 0.016 & 0.011 & 0.001 & 0.716 & 0.745 \\
+$T_{\infty}$ (fitted mean) & 0.021 & 0.004 & 0.026 & 0.337 & 0.368 \\
+$T_{2}$ (fitted mean) & 0.011 & 0.003 & 0.004 & 0.320 & 0.364 \\
+$T_{\infty}$ (baseline count) & 0.002 & 0.001 & 0.001 & 0.201 & 0.219 \\
+$T_{2}$ (baseline count) & 0.001 & 0.001 & 0.002 & 0.163 & 0.175 \\
+$T_{\infty}$ (age) & 0.155 & 0.089 & 0.008 & 0.674 & 0.705 \\
+$T_{2}$ (age) & 0.260 & 0.122 & 0.006 & 0.765 & 0.801 \\
+$T_{\infty}$ (treatment) & 0.344 & 0.693 & 0.006 & 0.764 & 0.802 \\
+$T_{2}$ (treatment) & 0.506 & 0.679 & 0.078 & 0.863 & 0.889 \\
+$T_{\max r}$ & 0.020 & 0.241 & 0.095 & 0.022 & 0.029 \\
+$T_{\max C}$ & 0.050 & 0.206 & 0.018 & 0.059 & 0.060 \\
+$T_{\mathrm{disp}}$ & 0.011 & 0.011 & 0.986 & 0.194 & 0.175 \\
+$T_{\mathrm{lag}}$ & 0.635 & 0.510 & 0.722 & 0.696 & 0.690 \\
+\midrule
+$p_{\mathrm{combo}}$ & 0.001 & 0.001 & 0.001 & 0.130 & 0.165 \\
+\bottomrule
+\end{tabular*}
+\end{table}

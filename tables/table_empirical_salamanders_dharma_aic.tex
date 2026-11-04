@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Salamanders model comparison and \texttt{DHARMa} diagnostics.}
+\label{tab:empirical-salamanders-dharma-aic}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Model & AIC & \texttt{DHARMa} unif. & \texttt{DHARMa} disp. & \texttt{DHARMa} zero & \texttt{DHARMa} outlier \\
+\midrule
+Poisson RI & 1940.2 & 0.000022 & 0.194 & 0.000 & 0.000 \\
+NB2 RI & 1663.4 & 0.508808 & 0.362 & 0.624 & 0.820 \\
+ZIP RI & 1778.1 & 0.023551 & 0.016 & 0.950 & 0.240 \\
+ZINB RI & 1669.7 & 0.973657 & 0.694 & 0.990 & 1.000 \\
+\bottomrule
+\end{tabular}}%
+\par\vspace{0.5ex}\footnotesize{The Poisson random-intercept model is the intentionally simple baseline. NB2 and ZINB are modern count-data alternatives fitted with the same fixed-effect and site random-intercept structure; ZIP is shown as an additional zero-inflated comparator.}
+\end{table}

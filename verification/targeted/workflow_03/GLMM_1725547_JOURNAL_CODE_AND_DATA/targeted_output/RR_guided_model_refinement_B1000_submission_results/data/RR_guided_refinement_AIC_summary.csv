@@ -1,0 +1,7 @@
+example,model,df,AIC
+Salamanders,fit_base,16,1663.3569839992745
+Salamanders,fit_env,21,1670.3090717373602
+Owls,fit_base,10,3383.0237144619373
+Owls,fit_arr,14,3353.3985803630735
+epil,fit_base,9,1272.7684689318576
+epil,fit_ref,13,1270.3740116565514

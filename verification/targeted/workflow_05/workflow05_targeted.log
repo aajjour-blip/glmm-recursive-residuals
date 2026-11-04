@@ -1,0 +1,70 @@
+Loading required package: Matrix
+This is DHARMa 0.4.7. For overview type '?DHARMa'. For recent changes, type news(package = 'DHARMa')
+
+Attaching package: ‘statmod’
+
+The following object is masked from ‘package:glmmTMB’:
+
+    tweedie
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:MASS’:
+
+    select
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Outputs will be written to:
+ [REDACTED_LOCAL_PATH] 
+
+
+Loading MASS::bacteria...
+ARCHIVED_RR_SUMMARY_REUSED bacteria_RR_run_summary.csv 
+
+Loading glmmTMB::Owls...
+ARCHIVED_RR_SUMMARY_REUSED Owls_Poisson_RI_RR_run_summary.csv 
+ARCHIVED_RR_SUMMARY_REUSED Owls_NB2_RI_RR_run_summary.csv 
+ARCHIVED_RR_SUMMARY_REUSED Owls_ZINB_RI_RR_run_summary.csv 
+
+Loading MASS::epil...
+ARCHIVED_RR_SUMMARY_REUSED epil_Poisson_RI_RR_run_summary.csv 
+ARCHIVED_RR_SUMMARY_REUSED epil_NB2_RI_RR_run_summary.csv 
+Warning message:
+In (function (start, objective, gradient = NULL, hessian = NULL,  :
+  NA/NaN function evaluation
+
+Loading datasets::ChickWeight...
+ARCHIVED_RR_SUMMARY_REUSED ChickWeight_Gamma_RI_RR_run_summary.csv 
+
+Loading lme4::sleepstudy...
+ARCHIVED_RR_SUMMARY_REUSED sleepstudy_Gamma_RI_RR_run_summary.csv 
+DHARMa: Owls Poisson_RI 
+DHARMa:testOutliers with type = binomial may have inflated Type I error rates for integer-valued distributions. To get a more exact result, it is recommended to re-run testOutliers with type = 'bootstrap'. See ?testOutliers for details
+DHARMa:testOutliers with type = binomial may have inflated Type I error rates for integer-valued distributions. To get a more exact result, it is recommended to re-run testOutliers with type = 'bootstrap'. See ?testOutliers for details
+DHARMa: Owls NB2_RI 
+DHARMa: Owls ZIP_RI 
+DHARMa: Owls ZINB_RI 
+DHARMa: epil Poisson_RI 
+qu = 0.75, log(sigma) = -2.645972 : outer Newton did not converge fully.
+DHARMa: epil NB2_RI 
+DHARMa: ChickWeight Gamma_RI 
+DHARMa: sleepstudy Gamma_RI 
+Warning message:
+In newton(lsp = lsp, X = G$X, y = G$y, Eb = G$Eb, UrS = G$UrS, L = G$L,  :
+  Fitting terminated with step failure - check results carefully
+
+DONE.
+All outputs are in:
+[REDACTED_LOCAL_PATH] 
+
+Output folder:
+additional_empirical_results

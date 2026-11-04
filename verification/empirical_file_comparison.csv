@@ -1,0 +1,77 @@
+workflow,kind,file,source,identical_bytes,different_cells,numeric_cells
+03,RR_OR_OTHER,Owls_ZINB_arrival_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,56
+03,RR_OR_OTHER,Owls_ZINB_arrival_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,14000
+03,RR_OR_OTHER,Owls_ZINB_arrival_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,6589
+03,RR_OR_OTHER,Owls_ZINB_arrival_RR_run_summary.csv,Full-scale B1000 replay,True,0,7
+03,RR_OR_OTHER,Owls_refinement_AIC.csv,Full-scale B1000 replay,True,0,4
+03,RR_OR_OTHER,RR_guided_refinement_AIC_summary.csv,Full-scale B1000 replay,True,0,12
+03,DHARMa,RR_guided_refinement_DHARMa_summary_B1000.csv,Targeted workflow 03 rerun; B1000 RR simulation not repeated,True,0,12
+03,RR_OR_OTHER,RR_guided_refinement_summary_B1000.csv,Full-scale B1000 replay,False,0,21
+03,RR_OR_OTHER,Salamanders_NB2_env_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,64
+03,RR_OR_OTHER,Salamanders_NB2_env_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,16000
+03,RR_OR_OTHER,Salamanders_NB2_env_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,10304
+03,RR_OR_OTHER,Salamanders_NB2_env_RR_run_summary.csv,Full-scale B1000 replay,True,0,7
+03,RR_OR_OTHER,Salamanders_refinement_AIC.csv,Full-scale B1000 replay,True,0,4
+03,RR_OR_OTHER,epil_NB2_refined_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,64
+03,RR_OR_OTHER,epil_NB2_refined_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,16000
+03,RR_OR_OTHER,epil_NB2_refined_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,4012
+03,RR_OR_OTHER,epil_NB2_refined_RR_run_summary.csv,Full-scale B1000 replay,True,0,7
+03,RR_OR_OTHER,epil_refinement_AIC.csv,Full-scale B1000 replay,True,0,4
+03,RR_OR_OTHER,previous_RR_reference_for_refinement.csv,Full-scale B1000 replay,True,0,3
+04,DHARMa,salamanders_DHARMa_tests_B1000.csv,Targeted workflow 04 rerun; B1000 RR simulation not repeated,True,0,16
+04,RR_OR_OTHER,salamanders_RR_NB2_RI_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,64
+04,RR_OR_OTHER,salamanders_RR_NB2_RI_B1000_observed_residuals.csv,Full-scale B1000 replay,True,0,7084
+04,RR_OR_OTHER,salamanders_RR_NB2_RI_B1000_run_summary.csv,Full-scale B1000 replay,True,0,5
+04,RR_OR_OTHER,salamanders_RR_NB2_RI_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,16000
+04,RR_OR_OTHER,salamanders_RR_Poisson_RI_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,64
+04,RR_OR_OTHER,salamanders_RR_Poisson_RI_B1000_observed_residuals.csv,Full-scale B1000 replay,True,0,7084
+04,RR_OR_OTHER,salamanders_RR_Poisson_RI_B1000_run_summary.csv,Full-scale B1000 replay,True,0,5
+04,RR_OR_OTHER,salamanders_RR_Poisson_RI_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,16000
+04,RR_OR_OTHER,salamanders_RR_ZINB_RI_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,64
+04,RR_OR_OTHER,salamanders_RR_ZINB_RI_B1000_observed_residuals.csv,Full-scale B1000 replay,True,0,7084
+04,RR_OR_OTHER,salamanders_RR_ZINB_RI_B1000_run_summary.csv,Full-scale B1000 replay,True,0,5
+04,RR_OR_OTHER,salamanders_RR_ZINB_RI_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,16000
+04,RR_OR_OTHER,salamanders_RR_all_models_summary_B1000.csv,Full-scale B1000 replay,True,0,15
+04,RR_OR_OTHER,salamanders_model_AIC.csv,Full-scale B1000 replay,True,0,8
+05,RR_OR_OTHER,ALL_remaining_examples_RR_summary_B1000.csv,Full-scale B1000 replay,True,0,43
+05,DHARMa,ChickWeight_DHARMa_tests_B1000.csv,Targeted workflow 05 rerun; B1000 RR simulation not repeated,True,0,4
+05,RR_OR_OTHER,ChickWeight_Gamma_RI_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,40
+05,RR_OR_OTHER,ChickWeight_Gamma_RI_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,10000
+05,RR_OR_OTHER,ChickWeight_Gamma_RI_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,4624
+05,RR_OR_OTHER,ChickWeight_Gamma_RI_RR_run_summary.csv,Full-scale B1000 replay,True,0,5
+05,RR_OR_OTHER,ChickWeight_model_AIC.csv,Full-scale B1000 replay,True,0,4
+05,DHARMa,Owls_DHARMa_tests_B1000.csv,Targeted workflow 05 rerun; B1000 RR simulation not repeated,False,1,16
+05,RR_OR_OTHER,Owls_NB2_RI_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,56
+05,RR_OR_OTHER,Owls_NB2_RI_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,14000
+05,RR_OR_OTHER,Owls_NB2_RI_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,5990
+05,RR_OR_OTHER,Owls_NB2_RI_RR_run_summary.csv,Full-scale B1000 replay,True,0,5
+05,RR_OR_OTHER,Owls_Poisson_RI_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,56
+05,RR_OR_OTHER,Owls_Poisson_RI_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,14000
+05,RR_OR_OTHER,Owls_Poisson_RI_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,5990
+05,RR_OR_OTHER,Owls_Poisson_RI_RR_run_summary.csv,Full-scale B1000 replay,True,0,5
+05,RR_OR_OTHER,Owls_ZINB_RI_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,56
+05,RR_OR_OTHER,Owls_ZINB_RI_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,14000
+05,RR_OR_OTHER,Owls_ZINB_RI_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,5990
+05,RR_OR_OTHER,Owls_ZINB_RI_RR_run_summary.csv,Full-scale B1000 replay,True,0,5
+05,RR_OR_OTHER,Owls_model_AIC.csv,Full-scale B1000 replay,True,0,8
+05,DHARMa,bacteria_DHARMa_AIC_B1000.csv,Targeted workflow 05 rerun; B1000 RR simulation not repeated,True,0,5
+05,RR_OR_OTHER,bacteria_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,40
+05,RR_OR_OTHER,bacteria_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,10000
+05,RR_OR_OTHER,bacteria_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,1540
+05,RR_OR_OTHER,bacteria_RR_run_summary.csv,Full-scale B1000 replay,True,0,8
+05,DHARMa,epil_DHARMa_tests_B1000.csv,Targeted workflow 05 rerun; B1000 RR simulation not repeated,False,2,8
+05,RR_OR_OTHER,epil_NB2_RI_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,56
+05,RR_OR_OTHER,epil_NB2_RI_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,14000
+05,RR_OR_OTHER,epil_NB2_RI_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,3304
+05,RR_OR_OTHER,epil_NB2_RI_RR_run_summary.csv,Full-scale B1000 replay,True,0,5
+05,RR_OR_OTHER,epil_Poisson_RI_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,56
+05,RR_OR_OTHER,epil_Poisson_RI_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,14000
+05,RR_OR_OTHER,epil_Poisson_RI_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,3304
+05,RR_OR_OTHER,epil_Poisson_RI_RR_run_summary.csv,Full-scale B1000 replay,True,0,5
+05,RR_OR_OTHER,epil_model_AIC.csv,Full-scale B1000 replay,True,0,4
+05,DHARMa,sleepstudy_DHARMa_tests_B1000.csv,Targeted workflow 05 rerun; B1000 RR simulation not repeated,True,0,4
+05,RR_OR_OTHER,sleepstudy_Gamma_RI_RR_B1000_component_calibration.csv,Full-scale B1000 replay,True,0,32
+05,RR_OR_OTHER,sleepstudy_Gamma_RI_RR_B1000_simulated_stats.csv,Full-scale B1000 replay,True,0,8000
+05,RR_OR_OTHER,sleepstudy_Gamma_RI_RR_observed_residuals.csv,Full-scale B1000 replay,True,0,1260
+05,RR_OR_OTHER,sleepstudy_Gamma_RI_RR_run_summary.csv,Full-scale B1000 replay,True,0,5
+05,RR_OR_OTHER,sleepstudy_model_AIC.csv,Full-scale B1000 replay,True,0,4

@@ -1,0 +1,3 @@
+TARGETED_OUTPUT_FILE_AUDIT {'rr_files': 18, 'dharma_files': 1, 'rr_numeric_diffs': 0, 'dharma_numeric_diffs': 0, 'decision_changes': 0}
+WORKFLOW03_TARGETED_EXECUTION_PASS
+LIMITATION: This test reuses B1000 files; it does not re-execute calibration.

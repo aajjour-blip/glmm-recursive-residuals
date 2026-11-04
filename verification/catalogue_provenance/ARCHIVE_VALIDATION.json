@@ -1,0 +1,17 @@
+{
+  "archive_internal_validation": "PASS",
+  "scenarios": 41,
+  "response_families": {
+    "binomial": 16,
+    "poisson": 21,
+    "gamma": 4
+  },
+  "detected_by_family": {
+    "binomial": 4,
+    "gamma": 2,
+    "poisson": 15
+  },
+  "original_generator_identified": false,
+  "ground_up_reproduction_verified": false,
+  "reference_csv_sha256": "e5951959964b973c1cb43ad3e3803e0c19f2b49b6d115e802f1281df5e06c990"
+}

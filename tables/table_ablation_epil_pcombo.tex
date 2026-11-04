@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Component ablation on the epilepsy data. Each row replaces one component of the proposed diagnostic and holds the others at the proposed choice. Entries are calibrated omnibus $p$-values based on $B=1000$ simulated reference datasets, for which 0.001 is the smallest attainable value; the last two rows are classical uncalibrated $p$-values computed on the sequential residuals.}
+\label{tab:ablation-epil}
+\begin{tabular*}{\textwidth}{@{}ll@{\extracolsep{\fill}}ccc@{}}
+\toprule
+Component & Variant & Poisson RI & NB2 RI & NB2 refined \\
+\midrule
+Proposed & Sequential residuals, refit reference, full set & 0.001 & 0.001 & 0.166 \\
+\midrule
+(i) Residual & Marginal residuals ($b_i$ not updated) & 0.001 & 0.001 & 0.130 \\
+ & Full-cluster posterior residuals & 0.001 & 0.001 & 0.018 \\
+\midrule
+(ii) Reference & Plug-in reference (no refit) & 0.001 & 0.130 & 0.315 \\
+ & Known-parameter reference (i.i.d.\ $N(0,1)$) & 0.001 & 0.165 & 0.338 \\
+\midrule
+(i) and (ii) & Marginal residuals, plug-in reference & 0.111 & 0.736 & 0.865 \\
+\midrule
+(iii) Statistics & Indexed cumulative statistics only & 0.001 & 0.001 & 0.110 \\
+ & Direct distributional statistics only & 0.001 & 0.032 & 0.065 \\
+ & Kolmogorov--Smirnov test, uncalibrated & 0.102 & 0.597 & 0.752 \\
+ & Shapiro--Wilk test, uncalibrated & $<$0.001 & 0.003 & 0.003 \\
+\bottomrule
+\end{tabular*}
+\end{table}

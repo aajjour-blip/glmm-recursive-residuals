@@ -1,0 +1,3 @@
+model,df,AIC
+fit_sleep_gamma,4,1775.156673399014
+fit_sleep_gauss,4,-254.92197289641547

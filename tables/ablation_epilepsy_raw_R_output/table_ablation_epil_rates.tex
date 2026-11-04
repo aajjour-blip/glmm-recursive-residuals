@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Rejection rates (\%) at the 5\% level for datasets generated from the fitted epilepsy models on the observed design, with Wilson 95\% intervals. Null: refined NB2 generated and fitted. Mean misspecification: refined NB2 generated, NB2 random-intercept model fitted. Serial dependence: NB2 random-intercept model with a lagged log-count term generated, NB2 random-intercept model fitted. 200 datasets per scenario; $B=199$ reference replicates per dataset.}
+\label{tab:ablation-epil-rates}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+Block & Variant & Null & Mean misspec. & Serial, $\rho=0.25$ & Serial, $\rho=0.5$ \\
+\midrule
+Proposed & Sequential residuals, refit reference, full set & 3.0 (1.4, 6.4) & 25.0 (19.5, 31.4) & 32.5 (26.4, 39.3) & 98.0 (95.0, 99.2) \\
+\midrule
+(i) Residual & Marginal residuals (prior of $b_i$, no updating) & 5.5 (3.1, 9.6) & 41.5 (34.9, 48.4) & 11.5 (7.8, 16.7) & 62.5 (55.6, 68.9) \\
+ & Full-cluster posterior residuals & 6.0 (3.5, 10.2) & 17.5 (12.9, 23.4) & 7.0 (4.2, 11.4) & 15.0 (10.7, 20.6) \\
+\midrule
+(ii) Reference & Plug-in reference (simulate at $\hat\theta$, no refit) & 0.5 (0.1, 2.8) & 1.5 (0.5, 4.3) & 22.5 (17.3, 28.8) & 95.0 (91.0, 97.3) \\
+ & Known-parameter reference (i.i.d.\ $N(0,1)$) & 0.0 (0.0, 1.9) & 1.0 (0.3, 3.6) & 21.0 (15.9, 27.2) & 96.0 (92.3, 98.0) \\
+\midrule
+(i)+(ii) Both & Marginal residuals with plug-in reference & 0.0 (0.0, 1.9) & 1.5 (0.5, 4.3) & 3.0 (1.4, 6.4) & 47.5 (40.7, 54.4) \\
+\midrule
+(iii) Statistics & Indexed cumulative statistics only & 3.5 (1.7, 7.0) & 30.0 (24.1, 36.7) & 18.0 (13.3, 23.9) & 76.5 (70.2, 81.8) \\
+ & Direct distributional statistics only & 8.5 (5.4, 13.2) & 6.0 (3.5, 10.2) & 7.5 (4.6, 12.0) & 16.5 (12.0, 22.3) \\
+ & Classical Kolmogorov--Smirnov, uncalibrated & 0.0 (0.0, 1.9) & 0.0 (0.0, 1.9) & 0.0 (0.0, 1.9) & 0.5 (0.1, 2.8) \\
+ & Classical Shapiro--Wilk, uncalibrated & 4.0 (2.0, 7.7) & 5.0 (2.7, 9.0) & 4.5 (2.4, 8.3) & 8.0 (5.0, 12.6) \\
+\bottomrule
+\end{tabular}}
+\end{table}

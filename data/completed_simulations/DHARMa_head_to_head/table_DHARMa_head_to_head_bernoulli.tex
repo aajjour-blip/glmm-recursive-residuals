@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\caption{Head-to-head simulation comparison between recursive residuals and DHARMa for selected Bernoulli departures. Detection rates include Wilson 95\% Monte Carlo confidence intervals.}
+\label{tab:dharma-head-to-head-bernoulli}
+\begin{tabular}{llrrr}
+\toprule
+Scenario & Detector & Datasets & Detection rate & MC SE \\
+\midrule
+null & rr_detect & 200 & 7.0\% (4.2, 11.4) & 0.018 \\
+omitted_x2_gamma05 & rr_detect & 200 & 45.0\% (38.3, 51.9) & 0.035 \\
+omitted_x2_gamma10 & rr_detect & 200 & 99.0\% (96.4, 99.7) & 0.007 \\
+serial_dependence_rho10 & rr_detect & 200 & 37.5\% (31.1, 44.4) & 0.034 \\
+null & dharma_any_raw_detect & 200 & 2.0\% (0.8, 5.0) & 0.010 \\
+omitted_x2_gamma05 & dharma_any_raw_detect & 200 & 3.0\% (1.4, 6.4) & 0.012 \\
+omitted_x2_gamma10 & dharma_any_raw_detect & 200 & 2.5\% (1.1, 5.7) & 0.011 \\
+serial_dependence_rho10 & dharma_any_raw_detect & 200 & 3.0\% (1.4, 6.4) & 0.012 \\
+null & dharma_any_bonf_detect & 200 & 0.0\% (0.0, 1.9) & 0.000 \\
+omitted_x2_gamma05 & dharma_any_bonf_detect & 200 & 0.0\% (0.0, 1.9) & 0.000 \\
+omitted_x2_gamma10 & dharma_any_bonf_detect & 200 & 0.5\% (0.1, 2.8) & 0.005 \\
+serial_dependence_rho10 & dharma_any_bonf_detect & 200 & 0.0\% (0.0, 1.9) & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

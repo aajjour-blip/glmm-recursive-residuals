@@ -1,0 +1,45 @@
+This is DHARMa 0.4.7. For overview type '?DHARMa'. For recent changes, type news(package = 'DHARMa')
+
+Attaching package: ‘statmod’
+
+The following object is masked from ‘package:glmmTMB’:
+
+    tweedie
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Outputs will be written to:
+ [REDACTED_LOCAL_PATH] 
+
+Warning message:
+In finalizeTMB(TMBStruc, obj, fit, h, data.tmb.old) :
+  Model convergence problem; singular convergence (7). See vignette('troubleshooting'), help('diagnose')
+PRESERVED_RR_SUMMARY_REUSED Poisson_RI 1000/1000
+PRESERVED_RR_SUMMARY_REUSED NB2_RI 1000/1000
+PRESERVED_RR_SUMMARY_REUSED ZINB_RI 1000/1000
+Running DHARMa diagnostics...
+DHARMa:testOutliers with type = binomial may have inflated Type I error rates for integer-valued distributions. To get a more exact result, it is recommended to re-run testOutliers with type = 'bootstrap'. See ?testOutliers for details
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+DHARMa:testOutliers with type = binomial may have inflated Type I error rates for integer-valued distributions. To get a more exact result, it is recommended to re-run testOutliers with type = 'bootstrap'. See ?testOutliers for details
+
+DONE.
+All outputs are in:
+[REDACTED_LOCAL_PATH] 
+
+Please zip this folder and save the output:
+RR_Salamanders_RR_B1000_NB2_ZINB_submission_results

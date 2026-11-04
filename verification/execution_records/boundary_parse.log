@@ -1,0 +1,159 @@
+expression(options(warn = 1), suppressPackageStartupMessages({
+    library(lme4)
+    library(statmod)
+    library(dplyr)
+}), source("code/functions_05_empirical_additional_examples.R", 
+    local = TRUE), O <- "results", dir.create(O, showWarnings = FALSE), 
+    arch <- read.csv("reference/cbpp_RR_B1000_simulated_stats.csv", 
+        check.names = FALSE), prev <- read.csv("reference/reconstructed_checkpoint.csv", 
+        check.names = FALSE), old <- read.csv("reference/reconstructed_cbpp_RR_B1000_simulated_stats.csv", 
+        check.names = FALSE), stopifnot(nrow(prev) == 1000L, 
+        nrow(arch) == 1000L, nrow(old) == 1000L, identical(as.integer(prev$replicate), 
+            seq_len(1000L)), !any(as.logical(prev$failure)), 
+        sum(as.logical(prev$singular)) == 16L), keys <- names(arch), 
+    stopifnot(length(keys) == 10L, identical(keys, names(old)), 
+        all(keys %in% names(prev))), stopifnot(max(abs(as.matrix(old[, 
+        keys, drop = FALSE]) - as.matrix(prev[, keys, drop = FALSE]))) < 
+        1e-07), base <- read.csv("reference/cbpp_RR_observed_residuals.csv", 
+        check.names = FALSE), base$herd <- factor(base$herd), 
+    base$period <- factor(base$period), base$period_num <- as.numeric(base$period_num), 
+    base <- base[order(base$herd, base$period_num), , drop = FALSE], 
+    base$obs <- seq_len(nrow(base)), model_formula <- cbind(incidence, 
+        size - incidence) ~ period + (1 | herd), ctrl <- glmerControl(optimizer = "bobyqa", 
+        optCtrl = list(maxfun = 2e+05)), fit0 <- glmer(model_formula, 
+        data = base, family = binomial(), control = ctrl, nAGQ = 1), 
+    obs_sigma <- as.numeric(attr(lme4::VarCorr(fit0)$herd, "stddev"))[1], 
+    if (!is.finite(obs_sigma) || obs_sigma == 0) stop("Observed model on variance boundary; archived observed index must also be canonicalized before recalibration"), 
+    rr_cbpp <- function(fitted, dat, seed) {
+        set.seed(seed)
+        dat <- dat[order(dat$herd, dat$period_num), , drop = FALSE]
+        b <- lme4::fixef(fitted)
+        X <- model.matrix(~period, data = dat)
+        stopifnot(identical(colnames(X), names(b)))
+        sigma <- as.numeric(attr(lme4::VarCorr(fitted)$herd, 
+            "stddev"))[1]
+        quad <- statmod::gauss.quad.prob(50, dist = "normal")
+        nodes <- quad$nodes * sigma
+        prior <- as.numeric(quad$weights)
+        r <- u <- pred <- rep(NA_real_, nrow(dat))
+        for (id in levels(dat$herd)) {
+            rr <- which(dat$herd == id)
+            lw <- rep(0, length(nodes))
+            for (j in rr) {
+                logw <- log(prior) + lw
+                w <- exp(logw - max(logw))
+                w <- w/sum(w)
+                p <- plogis(drop(X[j, , drop = FALSE] %*% b) + 
+                  nodes)
+                y <- dat$incidence[j]
+                m <- dat$size[j]
+                lo <- sum(w * pbinom(y - 1L, size = m, prob = p))
+                hi <- sum(w * pbinom(y, size = m, prob = p))
+                u[j] <- lo + runif(1) * (hi - lo)
+                r[j] <- qnorm(pmin(1 - .Machine$double.eps, pmax(.Machine$double.eps, 
+                  u[j])))
+                pred[j] <- sum(w * p)
+                lw <- lw + dbinom(y, size = m, prob = p, log = TRUE)
+            }
+        }
+        dat$rr <- r
+        dat$u <- u
+        dat$pred_prob <- pred
+        dat$pred_mean <- dat$size * pred
+        dat
+    }, fixed_pred <- function(f, dat) {
+        b <- lme4::fixef(f)
+        X <- model.matrix(~period, data = dat)
+        stopifnot(identical(colnames(X), names(b)))
+        as.numeric(plogis(drop(X %*% b)))
+    }, canonical_process <- function(x, key) {
+        stopifnot(length(x) == length(key), all(is.finite(x)), 
+            all(is.finite(key)))
+        ord <- order(key, seq_along(key), method = "radix")
+        w <- cumsum(x[ord])/sqrt(length(x))
+        c(Tinf_pred_prob = max(abs(w)), T2_pred_prob = mean(w^2))
+    }, ids <- as.integer(prev$replicate[as.logical(prev$singular)]), 
+    rows <- list(), out <- old, for (i in ids) {
+        y <- simulate(fit0, nsim = 1, seed = 10000L + i)[[1]]
+        if (is.matrix(y)) 
+            y <- y[, 1]
+        dat <- base
+        dat$incidence <- as.numeric(y)
+        f <- suppressWarnings(glmer(model_formula, data = dat, 
+            family = binomial(), control = ctrl, nAGQ = 1))
+        if (!lme4::isSingular(f)) 
+            stop(sprintf("Refit %s singularity changed", i))
+        rr <- rr_cbpp(f, dat, 20000L + i)
+        original_calc <- component_stats(rr, c("period_num", 
+            "pred_prob", "size"), "herd", "period_num")
+        err <- max(abs(as.numeric(unlist(original_calc[1, keys, 
+            drop = FALSE], use.names = FALSE)) - as.numeric(unlist(prev[i, 
+            keys, drop = FALSE], use.names = FALSE))))
+        if (!is.finite(err) || err > 1e-07) 
+            stop(sprintf("Original reconstructed replicate %s mismatch %.15g", 
+                i, err))
+        sigma <- as.numeric(attr(lme4::VarCorr(f)$herd, "stddev"))[1]
+        if (sigma == 0) {
+            key <- fixed_pred(f, rr)
+            mm <- model.matrix(~period, data = rr)
+            same_row <- apply(mm, 1, paste, collapse = "|")
+            stopifnot(all(tapply(key, same_row, function(v) length(unique(v)) == 
+                1L)))
+        }
+        else key <- rr$pred_prob
+        st <- canonical_process(rr$rr, key)
+        rrtest <- rr
+        rrtest$canonical_index <- key
+        st2 <- component_stats(rrtest, "canonical_index", "herd", 
+            "period_num")
+        stopifnot(abs(st[1] - st2$Tinf_canonical_index) < 1e-12, 
+            abs(st[2] - st2$T2_canonical_index) < 1e-12)
+        if (sigma == 0) {
+            out[i, "Tinf_pred_prob"] <- as.numeric(st[1])
+            out[i, "T2_pred_prob"] <- as.numeric(st[2])
+        }
+        archived <- as.numeric(unlist(arch[i, c("Tinf_pred_prob", 
+            "T2_pred_prob")], use.names = FALSE))
+        before <- as.numeric(unlist(old[i, c("Tinf_pred_prob", 
+            "T2_pred_prob")], use.names = FALSE))
+        rows[[length(rows) + 1L]] <- data.frame(replicate = i, 
+            sigma = sigma, original_reconstruction_max_abs_error = err, 
+            archived_Tinf = archived[1], archived_T2 = archived[2], 
+            reconstructed_Tinf = before[1], reconstructed_T2 = before[2], 
+            canonical_Tinf = st[1], canonical_T2 = st[2], original_max_abs_archived_error = max(abs(before - 
+                archived)), canonical_max_abs_archived_error = max(abs(st - 
+                archived)), correction_applied = (sigma == 0), 
+            stringsAsFactors = FALSE)
+        cat("BOUNDARY_REPLICATE", i, "sigma", format(sigma, digits = 16), 
+            "original_check", format(err, digits = 4), "canonical_Tinf", 
+            format(st[1], digits = 10), "canonical_T2", format(st[2], 
+                digits = 10), "\n")
+    }, stopifnot(length(rows) == 16L, sum(vapply(rows, function(x) x$correction_applied, 
+        logical(1))) == 15L), write.csv(dplyr::bind_rows(rows), 
+        file.path(O, "singular_boundary_16_comparison.csv"), 
+        row.names = FALSE), write.csv(out, file.path(O, "cbpp_B1000_canonical_boundary_simulated_stats.csv"), 
+        row.names = FALSE), others <- setdiff(keys, c("Tinf_pred_prob", 
+        "T2_pred_prob")), stopifnot(identical(out[, others, drop = FALSE], 
+        old[, others, drop = FALSE])), stopifnot(identical(out[!as.logical(prev$singular), 
+        keys, drop = FALSE], old[!as.logical(prev$singular), 
+        keys, drop = FALSE])), obs_cal <- read.csv("reference/reconstructed_cbpp_RR_component_calibration.csv", 
+        check.names = FALSE), stopifnot(all(c("statistic", "observed") %in% 
+        names(obs_cal))), obs <- as.data.frame(as.list(setNames(obs_cal$observed, 
+        obs_cal$statistic))), stopifnot(all(keys %in% names(obs))), 
+    newcal <- calibrate_components(obs[, keys, drop = FALSE], 
+        out[, keys, drop = FALSE], alpha = 0.05), write.csv(newcal, 
+        file.path(O, "cbpp_canonical_boundary_component_calibration.csv"), 
+        row.names = FALSE), archcal <- read.csv("reference/cbpp_RR_B1000_component_calibration.csv", 
+        check.names = FALSE), print(newcal[, c("statistic", "raw_component_p", 
+        "p_combo_minP", "detected_combo")]), summary <- data.frame(B = 1000L, 
+        singular = 16L, modified_zero_sigma = 15L, nonzero_sigma_unchanged = 1L, 
+        archived_p_combo = archcal$p_combo_minP[1], original_reconstruction_p_combo = obs_cal$p_combo_minP[1], 
+        canonical_boundary_p_combo = newcal$p_combo_minP[1], 
+        archived_reject_5pct = archcal$p_combo_minP[1] < 0.05, 
+        canonical_reject_5pct = newcal$p_combo_minP[1] < 0.05), 
+    write.csv(summary, file.path(O, "summary.csv"), row.names = FALSE), 
+    writeLines(capture.output(sessionInfo()), file.path(O, "sessionInfo.txt")), 
+    cat("BOUNDARY_CANONICALIZATION_PASS 15 zero-variance fits, 1 near-zero unchanged, 984 nonsingular unchanged\n"), 
+    cat("ARCHIVED_P_COMBO", archcal$p_combo_minP[1], "CANONICAL_P_COMBO", 
+        newcal$p_combo_minP[1], "\n"), cat("HISTORICAL_REPLICATE_EXACTNESS_NOT_CLAIMED\n"))
+BOUNDARY_R_PARSE_PASS

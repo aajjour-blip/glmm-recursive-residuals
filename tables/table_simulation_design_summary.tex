@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\small
+\caption{Summary of the simulation-design families reported in the main text. The full scenario catalogue, data-generating parameters, output CSV files, and process figures are provided in the reproducibility archive.}
+\label{tab:simulation-design-summary}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Design family & Purpose & Representative departures \\
+\midrule
+Calibration & Type-I behaviour under the fitted GLMM & Correct Bernoulli, Poisson, and Gamma models \\
+Mean structure & Misspecified conditional mean & Omitted covariates, nonlinear effects, interactions, and time trends \\
+Distribution & Misspecified response distribution & Overdispersion, zero inflation, zero deflation, and heteroscedasticity \\
+Random effects/dependence & Misspecified latent or sequential structure & Omitted random slopes, non-normal random effects, and serial dependence \\
+Outlying structure & Local or cluster-level contamination & Single observations, count outbreaks, and cluster accumulation \\
+\bottomrule
+\end{tabularx}
+\end{table}

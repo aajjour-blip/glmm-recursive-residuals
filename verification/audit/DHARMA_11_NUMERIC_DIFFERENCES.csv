@@ -1,0 +1,12 @@
+workflow,file,row,column,archived,regenerated,absolute_difference,archived_decision,regenerated_decision,decision_changed
+03,RR_guided_refinement_DHARMa_summary_B1000.csv,1,DHARMa_dispersion_p,0.392,0.388,0.0040000000000000036,DO_NOT_REJECT,DO_NOT_REJECT,False
+03,RR_guided_refinement_DHARMa_summary_B1000.csv,1,DHARMa_outlier_p,0.94,0.9,0.039999999999999925,DO_NOT_REJECT,DO_NOT_REJECT,False
+03,RR_guided_refinement_DHARMa_summary_B1000.csv,2,DHARMa_outlier_p,0.94,0.92,0.019999999999999907,DO_NOT_REJECT,DO_NOT_REJECT,False
+04,salamanders_DHARMa_tests_B1000.csv,1,DHARMa_outlier_p,0,0.04,0.04,REJECT,REJECT,False
+04,salamanders_DHARMa_tests_B1000.csv,2,DHARMa_outlier_p,0.82,0.92,0.10000000000000009,DO_NOT_REJECT,DO_NOT_REJECT,False
+04,salamanders_DHARMa_tests_B1000.csv,3,DHARMa_outlier_p,0.24,0.28,0.040000000000000036,DO_NOT_REJECT,DO_NOT_REJECT,False
+05,ChickWeight_DHARMa_tests_B1000.csv,1,DHARMa_outlier_p,0,0.04,0.04,REJECT,REJECT,False
+05,Owls_DHARMa_tests_B1000.csv,2,DHARMa_outlier_p,1,0.84,0.16000000000000003,DO_NOT_REJECT,DO_NOT_REJECT,False
+05,Owls_DHARMa_tests_B1000.csv,4,DHARMa_outlier_p,0.8,0.78,0.020000000000000018,DO_NOT_REJECT,DO_NOT_REJECT,False
+05,epil_DHARMa_tests_B1000.csv,1,DHARMa_outlier_p,0.22,0.24,0.01999999999999999,DO_NOT_REJECT,DO_NOT_REJECT,False
+05,epil_DHARMa_tests_B1000.csv,2,DHARMa_outlier_p,0.52,0.5,0.020000000000000018,DO_NOT_REJECT,DO_NOT_REJECT,False

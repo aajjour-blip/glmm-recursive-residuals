@@ -1,0 +1,7 @@
+bibentry(
+  bibtype = "Article",
+  title = "Posterior-Predictive Recursive Residuals for Generalized Linear Mixed Models: Construction, Theory, and Calibrated Diagnostics",
+  author = person("Ahmed", "Bani-Mustafa"),
+  year = "2026",
+  note = "Manuscript prototype package"
+)

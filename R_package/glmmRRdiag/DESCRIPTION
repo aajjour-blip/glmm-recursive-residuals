@@ -1,0 +1,14 @@
+Package: glmmRRdiag
+Type: Package
+Title: Posterior-Predictive Recursive Residual Diagnostics for GLMMs
+Version: 0.1.0
+Authors@R: c(person(given = "Ahmed", family = "Bani-Mustafa", role = c("aut", "cre"), email = "a.mustafa@au.edu.kw"))
+Description: Prototype implementation of posterior-predictive recursive residual diagnostics for generalized linear mixed models. The package computes within-cluster posterior-predictive randomized residuals, component diagnostics, refit-calibrated component p-values, and a calibrated minimum-p omnibus statistic for supported random-intercept GLMMs.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: stats, graphics, utils
+Suggests: lme4, MASS, testthat (>= 3.0.0)
+Config/testthat/edition: 3

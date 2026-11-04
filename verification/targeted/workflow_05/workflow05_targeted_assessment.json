@@ -1,0 +1,102 @@
+{
+  "DHARMa_version": "0.4.7",
+  "RR_simulations": "NOT_RERUN; verified archived RR summaries reused",
+  "model_AIC_and_RR_summary": {
+    "Owls_model_AIC.csv": {
+      "rows": 4,
+      "differences": []
+    },
+    "epil_model_AIC.csv": {
+      "rows": 2,
+      "differences": []
+    },
+    "ChickWeight_model_AIC.csv": {
+      "rows": 2,
+      "differences": []
+    },
+    "sleepstudy_model_AIC.csv": {
+      "rows": 2,
+      "differences": []
+    },
+    "ALL_remaining_examples_RR_summary_B1000.csv": {
+      "rows": 8,
+      "differences": []
+    }
+  },
+  "DHARMa_files": {
+    "Owls_DHARMa_tests_B1000.csv": {
+      "rows": 4,
+      "differences": [
+        {
+          "file": "Owls_DHARMa_tests_B1000.csv",
+          "row": 2,
+          "column": "DHARMa_outlier_p",
+          "archived": "1",
+          "regenerated": "0.86"
+        }
+      ],
+      "byte_identical": false
+    },
+    "epil_DHARMa_tests_B1000.csv": {
+      "rows": 2,
+      "differences": [
+        {
+          "file": "epil_DHARMa_tests_B1000.csv",
+          "row": 1,
+          "column": "DHARMa_outlier_p",
+          "archived": "0.22",
+          "regenerated": "0.24"
+        },
+        {
+          "file": "epil_DHARMa_tests_B1000.csv",
+          "row": 2,
+          "column": "DHARMa_outlier_p",
+          "archived": "0.52",
+          "regenerated": "0.56"
+        }
+      ],
+      "byte_identical": false
+    },
+    "ChickWeight_DHARMa_tests_B1000.csv": {
+      "rows": 1,
+      "differences": [],
+      "byte_identical": true
+    },
+    "sleepstudy_DHARMa_tests_B1000.csv": {
+      "rows": 1,
+      "differences": [],
+      "byte_identical": true
+    },
+    "bacteria_DHARMa_AIC_B1000.csv": {
+      "rows": 1,
+      "differences": [],
+      "byte_identical": true
+    }
+  },
+  "DHARMa_num_differences": 3,
+  "DHARMa_decision_changes": 0,
+  "differences": [
+    {
+      "file": "Owls_DHARMa_tests_B1000.csv",
+      "row": 2,
+      "column": "DHARMa_outlier_p",
+      "archived": "1",
+      "regenerated": "0.86"
+    },
+    {
+      "file": "epil_DHARMa_tests_B1000.csv",
+      "row": 1,
+      "column": "DHARMa_outlier_p",
+      "archived": "0.22",
+      "regenerated": "0.24"
+    },
+    {
+      "file": "epil_DHARMa_tests_B1000.csv",
+      "row": 2,
+      "column": "DHARMa_outlier_p",
+      "archived": "0.52",
+      "regenerated": "0.56"
+    }
+  ],
+  "decision_changes": []
+}

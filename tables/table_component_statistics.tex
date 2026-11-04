@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\caption{Component statistics used in the calibrated recursive-residual diagnostic toolkit. P-value columns in the results tables are denoted by lower-case $p$ to distinguish them from these statistics.}
+\label{tab:component-statistics}
+\begin{tabular}{ll}
+\toprule
+Statistic & Diagnostic role \\
+\midrule
+$T_\infty$ & Supremum departure in a recursive-residual process \\
+$T_2$ & Integrated or sustained process departure \\
+$T_{\max r}$ & Isolated observation-level anomaly \\
+$T_{\max C}$ & Extreme cluster-level residual summary \\
+$T_{\mathrm{disp}}$ & Variance or dispersion departure \\
+$T_{\mathrm{jump}}$ & Largest tied-index jump, $N^{-1/2}\max_c |\sum_{j:q_j=c} r_j|$ \\
+$T_{\mathrm{lag}}$ & Within-cluster serial dependence \\
+\bottomrule
+\end{tabular}
+\TableNote{$T_{\mathrm{jump}}$ is used only in the simulation catalogue (Table~S3). It equals the largest jump of the cumulative residual process across tied values of the displayed index; the power study, the head-to-head comparison and the empirical analyses use the other six statistics.}
+\end{table}

@@ -1,0 +1,2 @@
+dataset,model_name,family,B_ENV,N_QUAD,refit_failures,gamma_phi_assumption,p_combo_minP,p_min_raw,best_stat,detected_combo
+ChickWeight,Gamma_RI,Gamma,1000,40,0,phi = sigma(fit); shape = 1/phi,9.99000999000999e-4,9.99000999000999e-4,Tlag,TRUE

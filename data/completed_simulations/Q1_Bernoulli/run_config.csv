@@ -1,0 +1,2 @@
+run_type,run_mode,N_ALT,N_NULL,B_CAL,ALPHA,N_QUAD,M_VALUES,N_VALUES,GAMMA_ALT,GAMMA_NULL,output_folder,run_start_time
+RR_GLMM_Ver3_Bernoulli_Q1_power_level,FULL_Q1,200,500,200,0.05,25,"50,100,200","4,8,12","0.25,0.5,0.75,1",0,./RR_GLMM_Ver3_Bernoulli_Q1_power_level_submission_results,2026-06-28 20:42:03

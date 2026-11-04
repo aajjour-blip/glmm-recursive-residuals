@@ -1,0 +1,2 @@
+dataset,model,DHARMa_uniformity_p,DHARMa_dispersion_p,DHARMa_outlier_p,AIC,BIC,isSingular
+bacteria,ybin ~ trt * week_fac + (1 | ID),0.9862203544681358,0.916,1,217.62021842295465,271.9182591645924,FALSE

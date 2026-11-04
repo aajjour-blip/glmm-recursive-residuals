@@ -1,0 +1,20 @@
+{
+  "cbpp_status": "EXECUTED",
+  "catalogue_status": "BLOCKED_UNVERIFIED_SPECIFICATION",
+  "historical_exact_reproduction_claimed": false,
+  "mode": "full",
+  "cbpp_run_summary": {
+    "B_requested": "1000",
+    "B_success": "1000",
+    "failures": "0",
+    "singular": "16",
+    "AIC_baseline": "194.053132775129",
+    "AIC_OLRE": "186.638327147014",
+    "max_observed_stat_abs_diff": "0"
+  },
+  "cbpp_observed_stats_max_abs_diff": 0.0,
+  "cbpp_observed_stats_within_1e_7": true,
+  "cbpp_reconstructed_p_combo": "0.0859140859140859",
+  "cbpp_archived_p_combo": "0.08591408591408592",
+  "cbpp_p_combo_abs_diff": 1.3877787807814457e-17
+}

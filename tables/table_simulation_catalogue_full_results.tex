@@ -1,0 +1,59 @@
+\begingroup
+\tiny
+\setlength{\tabcolsep}{1.8pt}
+\renewcommand{\arraystretch}{0.92}
+\begin{longtable}{p{0.30\linewidth}p{0.05\linewidth}p{0.20\linewidth}rrrrrl}
+\caption{Full calibrated recursive-residual diagnostic results for all non-Gaussian simulation scenarios using $B=1000$ calibration replicates. Columns $p_\infty$ and $p_2$ report p-values for $T_\infty$ and $T_2$. The formal global decision uses $p_{\mathrm{combo}}$; the raw $p_{\min}$ is retained as a screening measure.}\label{tab:simulation-catalogue-full}\\
+\toprule
+Scenario & Fam. & Index & $p_\infty$ & $p_2$ & $p_{\min}$ & $p_{\mathrm{combo}}$ & Best & Det. \\
+\midrule
+\endfirsthead
+\toprule
+Scenario & Fam. & Index & $p_\infty$ & $p_2$ & $p_{\min}$ & $p_{\mathrm{combo}}$ & Best & Det. \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+binary\_correct & Bin. & one-step fitted probability & 0.366 & 0.404 & 0.143 & 0.448 & $T_{\mathrm{lag}}$ & N \\
+binary\_omitted\_covariate & Bin. & omitted covariate z & 0.021 & 0.004 & 0.004 & 0.011 & $T_2$ & Y \\
+binary\_omitted\_nonlinear & Bin. & covariate x & 0.285 & 0.216 & 0.039 & 0.106 & $T_{\max r}$ & N \\
+binary\_omitted\_interaction & Bin. & covariate x & 0.101 & 0.065 & 0.053 & 0.174 & $T_{\mathrm{lag}}$ & N \\
+binary\_wrong\_time\_trend & Bin. & within-cluster order v & 0.019 & 0.015 & 0.015 & 0.099 & $T_2$ & N \\
+binary\_change\_point\_time & Bin. & within-cluster order v & 0.002 & 0.036 & 0.002 & 0.055 & $T_\infty$ & N \\
+binary\_wrong\_link\_probit & Bin. & one-step fitted probability & 0.582 & 0.536 & 0.108 & 0.350 & $T_{\max r}$ & N \\
+binary\_wrong\_link\_cloglog & Bin. & one-step fitted probability & 0.208 & 0.114 & 0.006 & 0.067 & $T_{\mathrm{lag}}$ & N \\
+binary\_omitted\_cluster\_covariate & Bin. & cluster covariate w & 0.015 & 0.007 & 0.007 & 0.015 & $T_2$ & Y \\
+binary\_omitted\_random\_slope & Bin. & covariate x & 0.273 & 0.317 & 0.235 & 0.588 & $T_{\mathrm{lag}}$ & N \\
+binary\_nonnormal\_re & Bin. & cluster fitted-risk summary & 0.992 & 0.990 & 0.141 & 0.823 & $T_{\max r}$ & N \\
+binary\_mixture\_re & Bin. & cluster fitted-risk summary & 0.005 & 0.015 & 0.005 & 0.034 & $T_\infty$ & Y \\
+binary\_serial\_dependence & Bin. & within-cluster order v & 0.800 & 0.822 & 0.012 & 0.046 & $T_{\mathrm{lag}}$ & Y \\
+binary\_block\_success & Bin. & within-cluster order v & 0.687 & 0.815 & 0.154 & 0.870 & $T_{\max C}$ & N \\
+binary\_block\_failure & Bin. & within-cluster order v & 0.376 & 0.351 & 0.056 & 0.170 & $T_{\max C}$ & N \\
+binary\_informative\_cluster\_size & Bin. & cluster size n\_i & 0.874 & 0.881 & 0.004 & 0.078 & $T_{\max r}$ & N \\
+poisson\_correct & Pois. & one-step fitted mean & 0.393 & 0.464 & 0.391 & 0.768 & $T_{\max r}$ & N \\
+poisson\_omitted\_covariate & Pois. & omitted covariate z & 0.001 & 0.001 & 0.001 & 0.001 & $T_\infty$ & Y \\
+poisson\_omitted\_nonlinear & Pois. & covariate x & 0.001 & 0.001 & 0.001 & 0.001 & $T_\infty$ & Y \\
+poisson\_omitted\_interaction & Pois. & covariate x & 0.159 & 0.085 & 0.031 & 0.044 & $T_{\max r}$ & Y \\
+poisson\_wrong\_time\_trend & Pois. & within-cluster order v & 0.001 & 0.002 & 0.001 & 0.001 & $T_\infty$ & Y \\
+poisson\_change\_point\_time & Pois. & within-cluster order v & 0.001 & 0.001 & 0.001 & 0.001 & $T_\infty$ & Y \\
+poisson\_omitted\_cluster\_covariate & Pois. & cluster covariate w & 0.061 & 0.034 & 0.034 & 0.135 & $T_2$ & N \\
+poisson\_omitted\_offset & Pois. & exposure E & 0.004 & 0.002 & 0.001 & 0.001 & $T_{\max r}$ & Y \\
+poisson\_overdispersion\_nb & Pois. & one-step fitted mean & 0.001 & 0.104 & 0.001 & 0.001 & $T_\infty$ & Y \\
+poisson\_underdispersion & Pois. & one-step fitted mean & 0.606 & 0.575 & 0.024 & 0.165 & $T_{\max C}$ & N \\
+poisson\_zero\_inflation & Pois. & one-step fitted mean & 0.001 & 0.002 & 0.001 & 0.001 & $T_\infty$ & Y \\
+poisson\_zero\_deflation & Pois. & one-step fitted mean & 0.001 & 0.001 & 0.001 & 0.001 & $T_\infty$ & Y \\
+poisson\_omitted\_random\_slope & Pois. & covariate x & 0.012 & 0.061 & 0.001 & 0.001 & $T_{\mathrm{disp}}$ & Y \\
+poisson\_nonnormal\_re & Pois. & cluster fitted-mean summary & 0.278 & 0.249 & 0.030 & 0.044 & $T_{\max C}$ & Y \\
+poisson\_mixture\_re & Pois. & cluster fitted-mean summary & 0.710 & 0.656 & 0.164 & 0.653 & $T_{\mathrm{jump}}$ & N \\
+poisson\_serial\_dependence & Pois. & within-cluster order v & 0.001 & 0.001 & 0.001 & 0.001 & $T_\infty$ & Y \\
+poisson\_count\_outbreak & Pois. & within-cluster order v & 0.015 & 0.012 & 0.001 & 0.001 & $T_{\max r}$ & Y \\
+poisson\_cluster\_outlier & Pois. & cluster fitted-mean summary & 0.534 & 0.808 & 0.144 & 0.322 & $T_{\mathrm{jump}}$ & N \\
+poisson\_single\_observation\_outlier & Pois. & within-cluster order v & 0.968 & 0.972 & 0.001 & 0.001 & $T_{\max r}$ & Y \\
+poisson\_high\_leverage\_cluster & Pois. & covariate x & 0.345 & 0.258 & 0.002 & 0.058 & $T_{\mathrm{disp}}$ & N \\
+poisson\_informative\_cluster\_size & Pois. & cluster size n\_i & 0.023 & 0.065 & 0.018 & 0.009 & $T_{\max C}$ & Y \\
+gamma\_correct & Gam. & one-step fitted mean & 0.525 & 0.439 & 0.200 & 0.436 & $T_{\mathrm{disp}}$ & N \\
+gamma\_wrong\_link & Gam. & one-step fitted mean & 0.003 & 0.156 & 0.003 & 0.097 & $T_\infty$ & N \\
+gamma\_heteroscedastic & Gam. & covariate x & 0.072 & 0.103 & 0.001 & 0.001 & $T_{\max r}$ & Y \\
+gamma\_outlier & Gam. & within-cluster order v & 0.077 & 0.223 & 0.001 & 0.001 & $T_{\max r}$ & Y \\
+\end{longtable}
+\endgroup

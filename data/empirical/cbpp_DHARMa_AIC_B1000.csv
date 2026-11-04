@@ -1,0 +1,2 @@
+dataset,model,DHARMa_uniformity_p,DHARMa_dispersion_p,DHARMa_outlier_p,AIC_baseline,AIC_OLRE,isSingular_baseline,isSingular_OLRE
+cbpp,period + (1|herd),0.1047607660878418,0.498,1,194.05313277512866,186.63832714701414,FALSE,FALSE

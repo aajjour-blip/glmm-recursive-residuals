@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\small
+\caption{Diagnostic signatures: leading component statistics and the misspecification
+classes they can suggest.}
+\label{tab:signature}
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}l@{}}
+\toprule
+Leading component & Indicated misspecification \\
+\midrule
+$T_\infty$ or $T_2$ indexed by covariate & Omitted or nonlinear covariate effect along that covariate \\
+$T_\infty$ or $T_2$ indexed by position $t$ & Visit or time-trend misspecification \\
+$T_\infty$ or $T_2$ indexed by fitted mean & Link or mean--variance misspecification \\
+$T_\infty$ or $T_2$ indexed by exposure & Offset misspecification \\
+$T_{\mathrm{disp}}$ & Variance mismatch: overdispersion, zero inflation, omitted random slopes \\
+$T_{\max r}$ & Isolated observation-level outliers, count outbreaks \\
+$T_{\max C}$ & Cluster-level failure: omitted cluster covariate, non-Gaussian or mixture random effects \\
+$T_{\mathrm{lag}}$ & Within-cluster serial dependence \\
+\bottomrule
+\end{tabular*}
+\end{table}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "table_detection_by_family.tex",
+    "reference_sha256": "01c19e417d6bf92884bd25af41ce0ffc85317e99cb05d71796cf767c1c6fec46",
+    "regenerated_sha256": "23567285932f5c9a00e53cc0d12a7182747f31ddfc598bec0af27550ebe24cfb",
+    "byte_identical": false
+  },
+  {
+    "file": "table_simulation_catalogue_full_results.tex",
+    "reference_sha256": "66b2eb8c425a94f762a7c90164dc044b0c90aadbf30d2b4ab321c45365eefea6",
+    "regenerated_sha256": "66b2eb8c425a94f762a7c90164dc044b0c90aadbf30d2b4ab321c45365eefea6",
+    "byte_identical": true
+  },
+  {
+    "file": "table_detected_scenarios.tex",
+    "reference_sha256": "ec6cc2f0b2d6657bd0313e4adba74fc31ec9b33a2843abe5e67f6f1ec9e8a466",
+    "regenerated_sha256": "ec6cc2f0b2d6657bd0313e4adba74fc31ec9b33a2843abe5e67f6f1ec9e8a466",
+    "byte_identical": true
+  },
+  {
+    "file": "table_borderline_scenarios.tex",
+    "reference_sha256": "9590177f01b5d8cffa05fc81743ba544733400b009e57aa8277ddab0ff6f8e14",
+    "regenerated_sha256": "9590177f01b5d8cffa05fc81743ba544733400b009e57aa8277ddab0ff6f8e14",
+    "byte_identical": true
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "DHARMa_version": "0.4.7",
+  "RR_simulations": "NOT_RERUN; archived summaries reused",
+  "AIC_refit": "MATCH",
+  "DHARMa_num_differences": 0,
+  "DHARMa_decision_changes": 0,
+  "differences": [],
+  "decision_changes": []
+}

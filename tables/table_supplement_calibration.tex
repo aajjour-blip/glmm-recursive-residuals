@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Supplementary calibration evidence: empirical null rejection rates under correctly specified generalized linear mixed models. For the Bernoulli family, 500 null datasets were generated per design cell; $N_{\mathrm{null}}$ is the number of successful runs, and intervals are Wilson 95\% intervals. For Poisson and Gamma, the reported value is the calibrated omnibus $p_{\mathrm{combo}}$ from the single correctly specified scenario of the simulation catalogue ($B=1000$ refit replicates each). The pooled Bernoulli rate is slightly above the nominal $5\%$ level; the intervals of two cells with $m=50$ lie above $5\%$.}
+\label{tab:supp-calibration}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+Family & Design $(m,\, n_i)$ & $N_{\mathrm{null}}$ & Empirical rejection rate & \multicolumn{2}{c}{Wilson 95\% CI} \\
+\cmidrule(lr){5-6}
+ &  &  &  & Lower & Upper \\
+\midrule
+Bernoulli & $m=50,\; n_i=4$ & 500 & 6.0\% & 4.2\% & 8.4\% \\
+Bernoulli & $m=50,\; n_i=8$ & 500 & 7.2\% & 5.2\% & 9.8\% \\
+Bernoulli & $m=50,\; n_i=12$ & 500 & 7.4\% & 5.4\% & 10.0\% \\
+Bernoulli & $m=100,\; n_i=4$ & 500 & 6.8\% & 4.9\% & 9.4\% \\
+Bernoulli & $m=100,\; n_i=8$ & 500 & 5.4\% & 3.7\% & 7.7\% \\
+Bernoulli & $m=100,\; n_i=12$ & 500 & 6.2\% & 4.4\% & 8.7\% \\
+Bernoulli & $m=200,\; n_i=4$ & 500 & 6.0\% & 4.2\% & 8.4\% \\
+Bernoulli & $m=200,\; n_i=8$ & 500 & 5.2\% & 3.6\% & 7.5\% \\
+Bernoulli & $m=200,\; n_i=12$ & 498 & 5.8\% & 4.1\% & 8.2\% \\
+\midrule
+Bernoulli & Pooled ($9$ cells) & $4498$ & $6.2\%$ & $5.6\%$ & $7.0\%$ \\
+\midrule
+Poisson & $m=100,\; n_i=8$ & $1^{\dag}$ & $p_{\mathrm{combo}} = 0.768$ & \multicolumn{2}{c}{---} \\
+Gamma   & $m=100,\; n_i=8$ & $1^{\dag}$ & $p_{\mathrm{combo}} = 0.436$ & \multicolumn{2}{c}{---} \\
+\bottomrule
+\end{tabular}}
+\TableNote{$^{\dag}$Single calibration run from the simulation catalogue; repeated null runs were not computed for the Poisson and Gamma families. The pooled Bernoulli null rejection rate is $6.2\%$ (Wilson 95\% CI $5.6\%$--$7.0\%$) over 4498 successful runs spanning the nine design cells.}
+\end{table}

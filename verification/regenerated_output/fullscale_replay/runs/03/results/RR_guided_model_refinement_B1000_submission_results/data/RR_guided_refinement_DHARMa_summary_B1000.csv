@@ -1,0 +1,4 @@
+example,model_name,DHARMa_uniformity_p,DHARMa_dispersion_p,DHARMa_zeroInflation_p,DHARMa_outlier_p
+Salamanders,NB2_env,0.8954796931346941,0.388,0.64,0.9
+Owls,ZINB_arrival,0.9834206340873539,0.014,0.952,0.92
+epil,NB2_refined,0.5062759310315561,0.908,0.1,1

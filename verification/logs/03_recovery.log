@@ -1,0 +1,34 @@
+This is DHARMa 0.4.7. For overview type '?DHARMa'. For recent changes, type news(package = 'DHARMa')
+
+Attaching package: ‘statmod’
+
+The following object is masked from ‘package:glmmTMB’:
+
+    tweedie
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:MASS’:
+
+    select
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+RR_REUSED Salamanders_NB2_env 1000/1000
+RR_REUSED Owls_ZINB_arrival 1000/1000
+RR_REUSED epil_NB2_refined 1000/1000
+AIC_FIT_MATCH Salamanders 
+AIC_FIT_MATCH Owls 
+AIC_FIT_MATCH epil 
+DHARMa for Salamanders NB2_env 
+DHARMa for Owls ZINB_arrival 
+DHARMa for epil NB2_refined 
+Error: file.exists(file.path(OUT, "data", "RR_guided_refinement_AIC_summary.csv")) is not TRUE
+Execution halted

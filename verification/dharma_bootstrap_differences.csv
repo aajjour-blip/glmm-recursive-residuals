@@ -1,0 +1,4 @@
+workflow,file,row,column,archived,regenerated
+05,Owls_DHARMa_tests_B1000.csv,2,DHARMa_outlier_p,1,0.86
+05,epil_DHARMa_tests_B1000.csv,1,DHARMa_outlier_p,0.22,0.24
+05,epil_DHARMa_tests_B1000.csv,2,DHARMa_outlier_p,0.52,0.56

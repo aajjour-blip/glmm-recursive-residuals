@@ -1,0 +1,2 @@
+dataset,model_name,family,zero_inflated,B_ENV,N_QUAD,refit_failures,p_combo_minP,p_min_raw,best_stat,detected_combo
+Owls,ZINB_RI,nbinom2,TRUE,1000,40,0,9.99000999000999e-4,9.99000999000999e-4,Tinf_ArrivalTime_num,TRUE

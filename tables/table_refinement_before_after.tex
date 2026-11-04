@@ -1,0 +1,23 @@
+\begin{center}
+\footnotesize
+\begin{longtable}{@{}p{1.7cm}p{1.2cm}rp{3.1cm}rp{2.8cm}p{2.2cm}@{}}
+\caption{Before-and-after summary of RR-guided model refinement. Previous p-values are taken from the empirical diagnostic runs; refined p-values come from the targeted RR-guided refits.}\label{tab:refinement-before-after}\\
+\toprule
+Example & Previous model & Prev. $p_{\mathrm{combo}}$ & Refined model & Refined $p_{\mathrm{combo}}$ & AIC change & Conclusion \\
+\midrule
+\endfirsthead
+\multicolumn{7}{l}{Table \thetable\ continued}\\
+\toprule
+Example & Previous model & Prev. $p_{\mathrm{combo}}$ & Refined model & Refined $p_{\mathrm{combo}}$ & AIC change & Conclusion \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Salamanders & NB2 RI & 0.417 & NB2 + environmental/time covariates & 0.464 & 1663.357 $\to$ 1670.309 & no further improvement needed \\
+Owls & ZINB RI & 0.000999 & ZINB + nonlinear arrival time & 0.000999 & 3383.024 $\to$ 3353.399 & partial improvement \\
+epil & NB2 RI & 0.000999 & NB2 + nonlinear baseline + treatment-by-period & 0.166 & 1272.768 $\to$ 1270.374 & successful refinement \\
+\end{longtable}
+\end{center}

@@ -1,0 +1,110 @@
+This is DHARMa 0.4.7. For overview type '?DHARMa'. For recent changes, type news(package = 'DHARMa')
+
+Attaching package: ‘statmod’
+
+The following object is masked from ‘package:glmmTMB’:
+
+    tweedie
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:MASS’:
+
+    select
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Outputs will be written to:
+ [REDACTED_LOCAL_PATH] 
+
+
+Loading Salamanders refinement...
+
+============================================================
+RR-guided refinement: Salamanders NB2_env 
+============================================================
+Salamanders NB2_env RR simulation 50 of 1000 
+Salamanders NB2_env RR simulation 100 of 1000 
+Salamanders NB2_env RR simulation 150 of 1000 
+Salamanders NB2_env RR simulation 200 of 1000 
+Salamanders NB2_env RR simulation 250 of 1000 
+Salamanders NB2_env RR simulation 300 of 1000 
+Salamanders NB2_env RR simulation 350 of 1000 
+Salamanders NB2_env RR simulation 400 of 1000 
+Salamanders NB2_env RR simulation 450 of 1000 
+Salamanders NB2_env RR simulation 500 of 1000 
+Salamanders NB2_env RR simulation 550 of 1000 
+Salamanders NB2_env RR simulation 600 of 1000 
+Salamanders NB2_env RR simulation 650 of 1000 
+Salamanders NB2_env RR simulation 700 of 1000 
+Salamanders NB2_env RR simulation 750 of 1000 
+Salamanders NB2_env RR simulation 800 of 1000 
+Salamanders NB2_env RR simulation 850 of 1000 
+Salamanders NB2_env RR simulation 900 of 1000 
+Salamanders NB2_env RR simulation 950 of 1000 
+Salamanders NB2_env RR simulation 1000 of 1000 
+
+Loading Owls refinement...
+
+============================================================
+RR-guided refinement: Owls ZINB_arrival 
+============================================================
+Owls ZINB_arrival RR simulation 50 of 1000 
+Owls ZINB_arrival RR simulation 100 of 1000 
+Owls ZINB_arrival RR simulation 150 of 1000 
+Owls ZINB_arrival RR simulation 200 of 1000 
+Owls ZINB_arrival RR simulation 250 of 1000 
+Owls ZINB_arrival RR simulation 300 of 1000 
+Owls ZINB_arrival RR simulation 350 of 1000 
+Owls ZINB_arrival RR simulation 400 of 1000 
+Owls ZINB_arrival RR simulation 450 of 1000 
+Owls ZINB_arrival RR simulation 500 of 1000 
+Owls ZINB_arrival RR simulation 550 of 1000 
+Owls ZINB_arrival RR simulation 600 of 1000 
+Owls ZINB_arrival RR simulation 650 of 1000 
+Owls ZINB_arrival RR simulation 700 of 1000 
+Owls ZINB_arrival RR simulation 750 of 1000 
+Owls ZINB_arrival RR simulation 800 of 1000 
+Owls ZINB_arrival RR simulation 850 of 1000 
+Owls ZINB_arrival RR simulation 900 of 1000 
+Owls ZINB_arrival RR simulation 950 of 1000 
+Owls ZINB_arrival RR simulation 1000 of 1000 
+
+Loading epil refinement...
+
+============================================================
+RR-guided refinement: epil NB2_refined 
+============================================================
+epil NB2_refined RR simulation 50 of 1000 
+epil NB2_refined RR simulation 100 of 1000 
+epil NB2_refined RR simulation 150 of 1000 
+epil NB2_refined RR simulation 200 of 1000 
+epil NB2_refined RR simulation 250 of 1000 
+epil NB2_refined RR simulation 300 of 1000 
+epil NB2_refined RR simulation 350 of 1000 
+epil NB2_refined RR simulation 400 of 1000 
+epil NB2_refined RR simulation 450 of 1000 
+epil NB2_refined RR simulation 500 of 1000 
+epil NB2_refined RR simulation 550 of 1000 
+epil NB2_refined RR simulation 600 of 1000 
+epil NB2_refined RR simulation 650 of 1000 
+epil NB2_refined RR simulation 700 of 1000 
+epil NB2_refined RR simulation 750 of 1000 
+epil NB2_refined RR simulation 800 of 1000 
+epil NB2_refined RR simulation 850 of 1000 
+epil NB2_refined RR simulation 900 of 1000 
+epil NB2_refined RR simulation 950 of 1000 
+epil NB2_refined RR simulation 1000 of 1000 
+DHARMa for Salamanders NB2_env 
+DHARMa for Owls ZINB_arrival 
+Error in d$logBroodSize : $ operator is invalid for atomic vectors
+Calls: dharma_for_model ... model.frame -> model.frame.default -> eval -> eval -> offset
+Execution halted

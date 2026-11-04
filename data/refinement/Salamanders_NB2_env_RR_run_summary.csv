@@ -1,0 +1,2 @@
+example,model_name,family_type,zero_inflated,B_ENV_requested,B_ENV_successful,N_QUAD,refit_failures,rr_failures_skipped,p_combo_minP,p_min_raw,best_stat,detected_combo
+Salamanders,NB2_env,nbinom2,FALSE,1000,1000,40,0,0,0.46353646353646355,0.08891108891108891,Tmax_C,FALSE

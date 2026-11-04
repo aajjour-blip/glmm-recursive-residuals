@@ -1,0 +1,4 @@
+model_name,family_type,zero_inflated,B_ENV,N_QUAD,refit_failures,p_combo_minP,p_min_raw,best_stat,detected_combo
+Poisson_RI,poisson,FALSE,1000,50,0,9.99000999000999e-4,9.99000999000999e-4,Tmax_r,TRUE
+NB2_RI,nbinom2,FALSE,1000,50,0,0.4165834165834166,0.06793206793206794,Tlag,FALSE
+ZINB_RI,nbinom2,TRUE,1000,50,0,0.04795204795204795,0.005994005994005994,Tmax_C,TRUE

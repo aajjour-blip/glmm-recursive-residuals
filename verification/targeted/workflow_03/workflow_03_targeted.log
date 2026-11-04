@@ -1,0 +1,47 @@
+This is DHARMa 0.4.7. For overview type '?DHARMa'. For recent changes, type news(package = 'DHARMa')
+
+Attaching package: ‘statmod’
+
+The following object is masked from ‘package:glmmTMB’:
+
+    tweedie
+
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:MASS’:
+
+    select
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Outputs will be written to:
+ [REDACTED_LOCAL_PATH] 
+
+
+Loading Salamanders refinement...
+PRESERVED_RR_1000_REUSED Salamanders NB2_env 
+
+Loading Owls refinement...
+OWLS_OFFSET_FUNCTION_NON_SHADOWING_PASS
+PRESERVED_RR_1000_REUSED Owls ZINB_arrival 
+
+Loading epil refinement...
+PRESERVED_RR_1000_REUSED epil NB2_refined 
+DHARMa for Salamanders NB2_env 
+DHARMa for Owls ZINB_arrival 
+DHARMa for epil NB2_refined 
+
+DONE.
+All outputs are in:
+ [REDACTED_LOCAL_PATH] 
+
+Output folder:
+RR_guided_model_refinement_B1000_submission_results

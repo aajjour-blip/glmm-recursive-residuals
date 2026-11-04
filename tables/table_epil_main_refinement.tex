@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Epilepsy data as the main RR-guided refinement example. The initial NB2 model was rejected by the calibrated recursive-residual diagnostic; adding nonlinear baseline structure and treatment-by-period terms improved AIC and removed the formal omnibus rejection.}
+\label{tab:epil-main-refinement}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrl}
+\toprule
+Model & AIC & \texttt{DHARMa} uniformity & \texttt{DHARMa} dispersion & $p_{\mathrm{combo}}$ & Main RR signal \\
+\midrule
+Poisson baseline & 1351.243 & -- & -- & 0.000999 & $T_2$ by period \\
+NB2 baseline & 1272.768 & 0.541 & 0.632 & 0.000999 & $T_2$ by baseline count \\
+NB2 refined & 1270.374 & 0.506 & 0.908 & 0.165834 & no formal omnibus rejection \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

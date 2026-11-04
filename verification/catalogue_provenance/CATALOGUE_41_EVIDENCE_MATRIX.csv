@@ -1,0 +1,42 @@
+scenario,response_family,archive_p_value,archive_detection,documented_related_code,exact_catalogue_generator_verified,DGP_parameters_verified,fitted_model_formula_verified,cluster_design_verified,seed_stream_verified,refit_calibration_verified,execution_status
+binary_correct,binomial,0.447552448,False,Q1 Bernoulli null design is analogous; not demonstrated identical to catalogue correct scenario,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_omitted_covariate,binomial,0.010989011,True,Q1/Bernoulli DHARMa omitted-x2 experiments are related; catalogue scenario not proven identical,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_omitted_nonlinear,binomial,0.105894106,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_omitted_interaction,binomial,0.173826174,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_wrong_time_trend,binomial,0.098901099,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_change_point_time,binomial,0.054945055,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_wrong_link_probit,binomial,0.34965035,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_wrong_link_cloglog,binomial,0.066933067,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_omitted_cluster_covariate,binomial,0.014985015,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_omitted_random_slope,binomial,0.588411588,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_nonnormal_re,binomial,0.823176823,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_mixture_re,binomial,0.033966034,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_serial_dependence,binomial,0.045954046,True,Bernoulli DHARMa comparison includes serial_dependence_rho10; design not proven same,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_block_success,binomial,0.87012987,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_block_failure,binomial,0.16983017,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+binary_informative_cluster_size,binomial,0.077922078,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_correct,poisson,0.768231768,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_omitted_covariate,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_omitted_nonlinear,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_omitted_interaction,poisson,0.043956044,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_wrong_time_trend,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_change_point_time,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_omitted_cluster_covariate,poisson,0.134865135,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_omitted_offset,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_overdispersion_nb,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_underdispersion,poisson,0.164835165,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_zero_inflation,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_zero_deflation,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_omitted_random_slope,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_nonnormal_re,poisson,0.043956044,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_mixture_re,poisson,0.653346653,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_serial_dependence,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_count_outbreak,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_cluster_outlier,poisson,0.321678322,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_single_observation_outlier,poisson,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_high_leverage_cluster,poisson,0.057942058,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+poisson_informative_cluster_size,poisson,0.008991009,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+gamma_correct,gamma,0.435564436,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+gamma_wrong_link,gamma,0.096903097,False,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+gamma_heteroscedastic,gamma,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY
+gamma_outlier,gamma,0.000999001,True,None identified in inspected two scripts,NO,NO,NO,NO,NO,NO,ARCHIVED_OUTPUT_ONLY

@@ -1,0 +1,2 @@
+model_name,family_type,zero_inflated,B_ENV,N_QUAD,refit_failures,p_combo_minP,p_min_raw,best_stat,detected_combo
+NB2_RI,nbinom2,FALSE,1000,50,0,0.4165834165834166,0.06793206793206794,Tlag,FALSE

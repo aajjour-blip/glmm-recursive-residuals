@@ -1,0 +1,46 @@
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 103 sigma 0 original_check 2.887e-15 canonical_Tinf 1.305626023 canonical_T2 0.6631444595 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 153 sigma 0 original_check 4.219e-15 canonical_Tinf 0.7793207709 canonical_T2 0.1950718127 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 206 sigma 0 original_check 1.776e-15 canonical_Tinf 0.8259115137 canonical_T2 0.270523741 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 423 sigma 0 original_check 3.553e-15 canonical_Tinf 0.5941209105 canonical_T2 0.0397367361 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 431 sigma 0 original_check 4.885e-15 canonical_Tinf 0.7065387522 canonical_T2 0.1165474939 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 485 sigma 0 original_check 3.553e-15 canonical_Tinf 0.4795868417 canonical_T2 0.04718265961 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 511 sigma 0 original_check 1.332e-15 canonical_Tinf 0.6860700584 canonical_T2 0.08472636097 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 519 sigma 0 original_check 3.109e-15 canonical_Tinf 0.622479703 canonical_T2 0.07536430512 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 655 sigma 0 original_check 4.885e-15 canonical_Tinf 0.5956021702 canonical_T2 0.07461269188 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 676 sigma 0 original_check 2.665e-15 canonical_Tinf 0.8753569045 canonical_T2 0.2446804981 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 682 sigma 0 original_check 2.665e-15 canonical_Tinf 0.416380651 canonical_T2 0.0296963798 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 768 sigma 0 original_check 4.663e-15 canonical_Tinf 1.170553617 canonical_T2 0.5808144158 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 831 sigma 1.999999999999819e-07 original_check 3.997e-15 canonical_Tinf 0.641749088 canonical_T2 0.09596835142 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 837 sigma 0 original_check 4.663e-15 canonical_Tinf 0.7982897976 canonical_T2 0.1627735931 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 939 sigma 0 original_check 1.11e-15 canonical_Tinf 0.6280478858 canonical_T2 0.05552049348 
+boundary (singular) fit: see help('isSingular')
+BOUNDARY_REPLICATE 952 sigma 0 original_check 8.882e-16 canonical_Tinf 0.7503214241 canonical_T2 0.1087786547 
+         statistic raw_component_p p_combo_minP detected_combo
+1  Tinf_period_num      0.27072927   0.08591409          FALSE
+2    T2_period_num      0.15184815   0.08591409          FALSE
+3   Tinf_pred_prob      0.65934066   0.08591409          FALSE
+4     T2_pred_prob      0.56043956   0.08591409          FALSE
+5        Tinf_size      0.25574426   0.08591409          FALSE
+6          T2_size      0.63436563   0.08591409          FALSE
+7           Tmax_r      0.01798202   0.08591409          FALSE
+8           Tmax_C      0.83416583   0.08591409          FALSE
+9            Tdisp      0.01398601   0.08591409          FALSE
+10            Tlag      0.26973027   0.08591409          FALSE
+BOUNDARY_CANONICALIZATION_PASS 15 zero-variance fits, 1 near-zero unchanged, 984 nonsingular unchanged
+ARCHIVED_P_COMBO 0.08591409 CANONICAL_P_COMBO 0.08591409 
+HISTORICAL_REPLICATE_EXACTNESS_NOT_CLAIMED
